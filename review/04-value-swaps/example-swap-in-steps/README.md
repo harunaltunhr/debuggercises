@@ -2,27 +2,35 @@
 
 ## /exercises/04-value-swaps/example-swap-in-steps 
 
-> 6/16/2020, 2:15:32 PM 
+> 6/16/2020, 5:25:44 PM 
 
 [../README.md](../README.md)
 
-- [/0-setup.js](#0-setupjs) - _fail_ 
-- [/1-store-y.js](#1-store-yjs) - _fail_ 
-- [/2-reassign-a.js](#2-reassign-ajs) - _fail_ 
+- [/0-setup.js](#0-setupjs) - _error_ 
+- [/1-store-y.js](#1-store-yjs) - _error_ 
+- [/2-reassign-a.js](#2-reassign-ajs) - _error_ 
 - [/3-use-stored-y.js](#3-use-stored-yjs) - _pass_ 
 
 ---
 
 ## /0-setup.js 
 
-> fail 
+> error 
 >
 > [review source](../../../exercises/04-value-swaps/example-swap-in-steps/0-setup.js)
 
 ```txt
-- FAIL: Test 1
-- FAIL: Test 2
-- FAIL: Test 3
+UNCAUGHT: AssertionError [ERR_ASSERTION]: Test 1
+    at Console.assert (console.js:194:23)
+    at Console.assert (  ...  /scripts/lib/console-catcher.js:13:21)
+    at Object.<anonymous> (  ...  /exercises/04-value-swaps/example-swap-in-steps/0-setup.js:14:9)
+    at Module._compile (module.js:652:30)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Module.require (module.js:596:17)
+    at require (internal/module.js:11:18) 
 ```
 
 ```js
@@ -55,14 +63,22 @@ console.assert(isTrue3, "Test 3");
 
 ## /1-store-y.js 
 
-> fail 
+> error 
 >
 > [review source](../../../exercises/04-value-swaps/example-swap-in-steps/1-store-y.js)
 
 ```txt
-- FAIL: Test 1
-- FAIL: Test 2
-+ PASS: Test 3
+UNCAUGHT: AssertionError [ERR_ASSERTION]: Test 1
+    at Console.assert (console.js:194:23)
+    at Console.assert (  ...  /scripts/lib/console-catcher.js:13:21)
+    at Object.<anonymous> (  ...  /exercises/04-value-swaps/example-swap-in-steps/1-store-y.js:15:9)
+    at Module._compile (module.js:652:30)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Module.require (module.js:596:17)
+    at require (internal/module.js:11:18) 
 ```
 
 ```js
@@ -96,14 +112,23 @@ console.assert(isTrue3, "Test 3");
 
 ## /2-reassign-a.js 
 
-> fail 
+> error 
 >
 > [review source](../../../exercises/04-value-swaps/example-swap-in-steps/2-reassign-a.js)
 
 ```txt
 + PASS: Test 1
-- FAIL: Test 2
-+ PASS: Test 3
+UNCAUGHT: AssertionError [ERR_ASSERTION]: Test 2
+    at Console.assert (console.js:194:23)
+    at Console.assert (  ...  /scripts/lib/console-catcher.js:13:21)
+    at Object.<anonymous> (  ...  /exercises/04-value-swaps/example-swap-in-steps/2-reassign-a.js:19:9)
+    at Module._compile (module.js:652:30)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Module.require (module.js:596:17)
+    at require (internal/module.js:11:18) 
 ```
 
 ```js
