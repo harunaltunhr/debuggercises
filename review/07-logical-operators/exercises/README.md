@@ -2,33 +2,35 @@
 
 ## /exercises/07-logical-operators/exercises 
 
-> 6/16/2020, 2:15:32 PM 
+> 6/16/2020, 4:49:22 PM 
 
 [../README.md](../README.md)
 
-- [/and.js](#andjs) - _fail_ 
-- [/not.js](#notjs) - _fail_ 
-- [/or.js](#orjs) - _fail_ 
-- [/ternary.js](#ternaryjs) - _fail_ 
+- [/and.js](#andjs) - _error_ 
+- [/not.js](#notjs) - _error_ 
+- [/or.js](#orjs) - _error_ 
+- [/ternary.js](#ternaryjs) - _error_ 
 
 ---
 
 ## /and.js 
 
-> fail 
+> error 
 >
 > [review source](../../../exercises/07-logical-operators/exercises/and.js)
 
 ```txt
-- FAIL: Test 1
-- FAIL: Test 2
-- FAIL: Test 3
-- FAIL: Test 4
-- FAIL: Test 5
-- FAIL: Test 6
-- FAIL: Test 7
-- FAIL: Test 8
-- FAIL: Test 9
+UNCAUGHT: AssertionError [ERR_ASSERTION]: Test 1
+    at Console.assert (console.js:194:23)
+    at Console.assert (  ...  /scripts/lib/console-catcher.js:13:21)
+    at Object.<anonymous> (  ...  /exercises/07-logical-operators/exercises/and.js:11:9)
+    at Module._compile (module.js:652:30)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Module.require (module.js:596:17)
+    at require (internal/module.js:11:18) 
 ```
 
 ```js
@@ -84,20 +86,22 @@ console.assert(_9_actual === _9_expect, 'Test 9');
 
 ## /not.js 
 
-> fail 
+> error 
 >
 > [review source](../../../exercises/07-logical-operators/exercises/not.js)
 
 ```txt
-- FAIL: Test 1
-- FAIL: Test 2
-- FAIL: Test 3
-- FAIL: Test 4
-- FAIL: Test 5
-- FAIL: Test 6
-- FAIL: Test 7
-- FAIL: Test 8
-- FAIL: Test 9
+UNCAUGHT: AssertionError [ERR_ASSERTION]: Test 1
+    at Console.assert (console.js:194:23)
+    at Console.assert (  ...  /scripts/lib/console-catcher.js:13:21)
+    at Object.<anonymous> (  ...  /exercises/07-logical-operators/exercises/not.js:11:9)
+    at Module._compile (module.js:652:30)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Module.require (module.js:596:17)
+    at require (internal/module.js:11:18) 
 ```
 
 ```js
@@ -153,20 +157,22 @@ console.assert(_9_actual === _9_expect, 'Test 9');
 
 ## /or.js 
 
-> fail 
+> error 
 >
 > [review source](../../../exercises/07-logical-operators/exercises/or.js)
 
 ```txt
-- FAIL: Test 1
-- FAIL: Test 2
-- FAIL: Test 3
-- FAIL: Test 4
-- FAIL: Test 5
-- FAIL: Test 6
-- FAIL: Test 7
-+ PASS: Test 8
-- FAIL: Test 9
+UNCAUGHT: AssertionError [ERR_ASSERTION]: Test 1
+    at Console.assert (console.js:194:23)
+    at Console.assert (  ...  /scripts/lib/console-catcher.js:13:21)
+    at Object.<anonymous> (  ...  /exercises/07-logical-operators/exercises/or.js:11:9)
+    at Module._compile (module.js:652:30)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Module.require (module.js:596:17)
+    at require (internal/module.js:11:18) 
 ```
 
 ```js
@@ -222,20 +228,22 @@ console.assert(_9_actual === _9_expect, 'Test 9');
 
 ## /ternary.js 
 
-> fail 
+> error 
 >
 > [review source](../../../exercises/07-logical-operators/exercises/ternary.js)
 
 ```txt
-- FAIL: Test 1
-- FAIL: Test 2
-- FAIL: Test 3
-- FAIL: Test 4
-- FAIL: Test 5
-- FAIL: Test 6
-- FAIL: Test 7
-- FAIL: Test 8
-- FAIL: Test 9
+UNCAUGHT: AssertionError [ERR_ASSERTION]: Test 1
+    at Console.assert (console.js:194:23)
+    at Console.assert (  ...  /scripts/lib/console-catcher.js:13:21)
+    at Object.<anonymous> (  ...  /exercises/07-logical-operators/exercises/ternary.js:11:9)
+    at Module._compile (module.js:652:30)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Module.require (module.js:596:17)
+    at require (internal/module.js:11:18) 
 ```
 
 ```js

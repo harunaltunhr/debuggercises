@@ -2,7 +2,7 @@
 
 ## /exercises/09-conditionals 
 
-> 6/16/2020, 2:15:32 PM 
+> 6/16/2020, 4:49:22 PM 
 
 [../README.md](../README.md)
 
@@ -14,7 +14,7 @@
   - [/5-unreachable-paths.js](./0-examples/README.md#5-unreachable-pathsjs) - _pass_ 
 - [/1-execution-paths](./1-execution-paths/README.md)
   - [/1-write-expected.js](./1-execution-paths/README.md#1-write-expectedjs) - _incomplete_ 
-  - [/2-write-arguments.js](./1-execution-paths/README.md#2-write-argumentsjs) - _fail_ 
+  - [/2-write-arguments.js](./1-execution-paths/README.md#2-write-argumentsjs) - _error_ 
   - [/3-write-function.js](./1-execution-paths/README.md#3-write-functionjs) - _incomplete_ 
 - [/2-conditional-bodies](./2-conditional-bodies/README.md)
   - [/1-write-expected.js](./2-conditional-bodies/README.md#1-write-expectedjs) - _incomplete_ 
