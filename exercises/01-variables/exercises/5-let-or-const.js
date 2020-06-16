@@ -22,7 +22,7 @@ const building ='house';
 console.log(building); // should log 'house'
 
 furniture = 'table';
-console.log(_); // should log 'table'
+console.log(table); // should log 'table'
 
 let food;
 console.log(food); // should log undefined
@@ -30,9 +30,9 @@ console.log(food); // should log undefined
 food = 'apple';
 console.log(food); // should log 'apple'
 
-console.log(_); // should log 'house'
+console.log(building); // should log 'house'
 
-console.log(_); // should log 'table'
+console.log(table); // should log 'table'
 
 let fruits = `${food}, pear`;
-console.log(_); // should log 'apple, pear'
+console.log(fruits); // should log 'apple, pear'
