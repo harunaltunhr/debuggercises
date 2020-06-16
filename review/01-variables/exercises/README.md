@@ -2,7 +2,7 @@
 
 ## /exercises/01-variables/exercises 
 
-> 6/16/2020, 5:25:44 PM 
+> 6/16/2020, 5:29:16 PM 
 
 [../README.md](../README.md)
 
@@ -10,7 +10,7 @@
 - [/2-let.js](#2-letjs)  
 - [/3-let-or-const.js](#3-let-or-constjs)  
 - [/4-let-or-const.js](#4-let-or-constjs)  
-- [/5-let-or-const.js](#5-let-or-constjs) - _error_ 
+- [/5-let-or-const.js](#5-let-or-constjs)  
 
 ---
 
@@ -233,24 +233,19 @@ console.log(x); // should print 'a'
 
 ## /5-let-or-const.js 
 
-> error 
+>  
 >
 > [review source](../../../exercises/01-variables/exercises/5-let-or-const.js)
 
 ```txt
 LOG: chair
 LOG: house
-UNCAUGHT: ReferenceError: table is not defined
-    at Object.<anonymous> (  ...  /exercises/01-variables/exercises/5-let-or-const.js:25:13)
-    at Module._compile (module.js:652:30)
-    at Object.Module._extensions..js (module.js:663:10)
-    at Module.load (module.js:565:32)
-    at tryModuleLoad (module.js:505:12)
-    at Function.Module._load (module.js:497:3)
-    at Module.require (module.js:596:17)
-    at require (internal/module.js:11:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:12:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:116:1) 
+LOG: table
+LOG: undefined
+LOG: apple
+LOG: house
+LOG: table
+LOG: apple, pear
 ```
 
 ```js
@@ -278,7 +273,7 @@ const building ='house';
 console.log(building); // should log 'house'
 
 furniture = 'table';
-console.log(table); // should log 'table'
+console.log(furniture); // should log 'table'
 
 let food;
 console.log(food); // should log undefined
@@ -288,7 +283,7 @@ console.log(food); // should log 'apple'
 
 console.log(building); // should log 'house'
 
-console.log(table); // should log 'table'
+console.log(furniture); // should log 'table'
 
 let fruits = `${food}, pear`;
 console.log(fruits); // should log 'apple, pear'
