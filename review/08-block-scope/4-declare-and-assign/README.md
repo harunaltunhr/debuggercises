@@ -2,7 +2,7 @@
 
 ## /exercises/08-block-scope/4-declare-and-assign 
 
-> 6/16/2020, 4:49:22 PM 
+> 6/16/2020, 5:23:14 PM 
 
 [../README.md](../README.md)
 

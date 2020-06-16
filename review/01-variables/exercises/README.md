@@ -2,14 +2,14 @@
 
 ## /exercises/01-variables/exercises 
 
-> 6/16/2020, 4:49:22 PM 
+> 6/16/2020, 5:23:14 PM 
 
 [../README.md](../README.md)
 
 - [/1-let.js](#1-letjs)  
 - [/2-let.js](#2-letjs)  
 - [/3-let-or-const.js](#3-let-or-constjs)  
-- [/4-let-or-const.js](#4-let-or-constjs) - _incomplete_ 
+- [/4-let-or-const.js](#4-let-or-constjs)  
 - [/5-let-or-const.js](#5-let-or-constjs) - _incomplete_ 
 
 ---
@@ -170,22 +170,19 @@ console.log(aColor);
 
 ## /4-let-or-const.js 
 
-> incomplete 
+>  
 >
 > [review source](../../../exercises/01-variables/exercises/4-let-or-const.js)
 
 ```txt
-UNCAUGHT: ReferenceError: _ is not defined
-    at Object.<anonymous> (  ...  /exercises/01-variables/exercises/4-let-or-const.js:19:1)
-    at Module._compile (module.js:652:30)
-    at Object.Module._extensions..js (module.js:663:10)
-    at Module.load (module.js:565:32)
-    at tryModuleLoad (module.js:505:12)
-    at Function.Module._load (module.js:497:3)
-    at Module.require (module.js:596:17)
-    at require (internal/module.js:11:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:12:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:116:1) 
+LOG: a
+LOG: b
+LOG: a
+LOG: undefined
+LOG: b
+LOG: c
+LOG: bd
+LOG: a
 ```
 
 ```js
@@ -207,23 +204,23 @@ UNCAUGHT: ReferenceError: _ is not defined
 */
 
 
-_;
+const x ='a';
 console.log(x); // should print 'a'
 
-_;
+let y ='b';
 console.log(y); // should print 'b'
 
 console.log(x); // should print 'a'
 
-_;
+let z;
 console.log(z); // should print undefined
 
 console.log(y); // should print 'b'
 
-_;
+z ='c';
 console.log(z); // should print 'c'
 
-_;
+y=y+'d';
 console.log(y); // should print 'bd'
 
 console.log(x); // should print 'a'
@@ -241,8 +238,10 @@ console.log(x); // should print 'a'
 > [review source](../../../exercises/01-variables/exercises/5-let-or-const.js)
 
 ```txt
+LOG: chair
+LOG: house
 UNCAUGHT: ReferenceError: _ is not defined
-    at Object.<anonymous> (  ...  /exercises/01-variables/exercises/5-let-or-const.js:18:1)
+    at Object.<anonymous> (  ...  /exercises/01-variables/exercises/5-let-or-const.js:25:13)
     at Module._compile (module.js:652:30)
     at Object.Module._extensions..js (module.js:663:10)
     at Module.load (module.js:565:32)
@@ -272,26 +271,26 @@ UNCAUGHT: ReferenceError: _ is not defined
 
 */
 
-_;
+let furniture='chair';;
 console.log(furniture); // should log 'chair'
 
-_;
+const building ='house';
 console.log(building); // should log 'house'
 
 furniture = 'table';
 console.log(_); // should log 'table'
 
-_;
+let food;
 console.log(food); // should log undefined
 
-_;
+food = 'apple';
 console.log(food); // should log 'apple'
 
 console.log(_); // should log 'house'
 
 console.log(_); // should log 'table'
 
-_;
+let fruits = `${food}, pear`;
 console.log(_); // should log 'apple, pear'
 
 ```
