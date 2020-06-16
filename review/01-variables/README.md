@@ -2,7 +2,7 @@
 
 ## /exercises/01-variables 
 
-> 6/16/2020, 5:23:14 PM 
+> 6/16/2020, 5:25:44 PM 
 
 [../README.md](../README.md)
 
@@ -15,5 +15,5 @@
   - [/2-let.js](./exercises/README.md#2-letjs)  
   - [/3-let-or-const.js](./exercises/README.md#3-let-or-constjs)  
   - [/4-let-or-const.js](./exercises/README.md#4-let-or-constjs)  
-  - [/5-let-or-const.js](./exercises/README.md#5-let-or-constjs) - _incomplete_ 
+  - [/5-let-or-const.js](./exercises/README.md#5-let-or-constjs) - _error_ 
 

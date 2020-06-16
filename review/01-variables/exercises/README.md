@@ -2,7 +2,7 @@
 
 ## /exercises/01-variables/exercises 
 
-> 6/16/2020, 5:23:14 PM 
+> 6/16/2020, 5:25:44 PM 
 
 [../README.md](../README.md)
 
@@ -10,7 +10,7 @@
 - [/2-let.js](#2-letjs)  
 - [/3-let-or-const.js](#3-let-or-constjs)  
 - [/4-let-or-const.js](#4-let-or-constjs)  
-- [/5-let-or-const.js](#5-let-or-constjs) - _incomplete_ 
+- [/5-let-or-const.js](#5-let-or-constjs) - _error_ 
 
 ---
 
@@ -233,14 +233,14 @@ console.log(x); // should print 'a'
 
 ## /5-let-or-const.js 
 
-> incomplete 
+> error 
 >
 > [review source](../../../exercises/01-variables/exercises/5-let-or-const.js)
 
 ```txt
 LOG: chair
 LOG: house
-UNCAUGHT: ReferenceError: _ is not defined
+UNCAUGHT: ReferenceError: table is not defined
     at Object.<anonymous> (  ...  /exercises/01-variables/exercises/5-let-or-const.js:25:13)
     at Module._compile (module.js:652:30)
     at Object.Module._extensions..js (module.js:663:10)
@@ -278,7 +278,7 @@ const building ='house';
 console.log(building); // should log 'house'
 
 furniture = 'table';
-console.log(_); // should log 'table'
+console.log(table); // should log 'table'
 
 let food;
 console.log(food); // should log undefined
@@ -286,12 +286,12 @@ console.log(food); // should log undefined
 food = 'apple';
 console.log(food); // should log 'apple'
 
-console.log(_); // should log 'house'
+console.log(building); // should log 'house'
 
-console.log(_); // should log 'table'
+console.log(table); // should log 'table'
 
 let fruits = `${food}, pear`;
-console.log(_); // should log 'apple, pear'
+console.log(fruits); // should log 'apple, pear'
 
 ```
 
