@@ -1,12 +1,12 @@
 'use strict';
 
-function mystery(x) {
+const mystery = (x) => {
   if (typeof x === 'boolean') { throw new TypeError('x cannot be a boolean'); }
 
   const booleaned = Boolean(x);
   const numbered = Number(booleaned);
   return numbered;
-}
+};
 
 // write the expected return value
 
@@ -39,7 +39,7 @@ const _7_actual = mystery(-1);
 console.assert(_7_actual === _7_expect, 'Test 7');
 
 const _8_expect = _;
-const _8_actual = mystery(true);
+const _8_actual = mystery('true');
 console.assert(_8_actual === _8_expect, 'Test 8');
 
 const _9_expect = _;

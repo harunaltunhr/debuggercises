@@ -1,18 +1,15 @@
 # Debuggercises 
 
-## /exercises/03-comparing-and-asserting/examples 
+> 6/21/2020, 9:05:10 AM 
 
-> 6/16/2020, 5:29:16 PM 
-
-[../README.md](../README.md)
+## [exercises](../../README.md)/[03-comparing-and-asserting](../README.md)/examples 
 
 - [/1-strict-equality.js](#1-strict-equalityjs)  
-- [/2-extra-assignment-vs-comparison.js](#2-extra-assignment-vs-comparisonjs) - _error_ 
-- [/3-console-assert.js](#3-console-assertjs) - _error_ 
-- [/4-testing-with-assert.js](#4-testing-with-assertjs) - _incomplete_ 
-- [/extra-object-is.js](#extra-object-isjs)  
-- [/extra-strict-inequality.js](#extra-strict-inequalityjs)  
-
+- [/2-extra-assignment-vs-comparison.js](#2-extra-assignment-vs-comparisonjs) - _error (syntax)_ 
+- [/3-console-assert.js](#3-console-assertjs) - _fail_ 
+- [/4-testing-with-assert.js](#4-testing-with-assertjs) - _pass_ 
+- [/object-is.js](#object-isjs)  
+- [/strict-inequality.js](#strict-inequalityjs)  
 ---
 
 ## /1-strict-equality.js 
@@ -94,17 +91,17 @@ UNCAUGHT:   ...  /exercises/03-comparing-and-asserting/examples/2-extra-assignme
 'value 2' = variable; // uncomment this line for an error
 ^^^^^^^^^
 
-ReferenceError: Invalid left-hand side in assignment
-    at createScript (vm.js:80:10)
-    at Object.runInThisContext (vm.js:139:10)
-    at Module._compile (module.js:616:28)
-    at Object.Module._extensions..js (module.js:663:10)
-    at Module.load (module.js:565:32)
-    at tryModuleLoad (module.js:505:12)
-    at Function.Module._load (module.js:497:3)
-    at Module.require (module.js:596:17)
-    at require (internal/module.js:11:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:12:7) 
+SyntaxError: Invalid left-hand side in assignment
+    at wrapSafe (internal/modules/cjs/loader.js:1116:16)
+    at Module._compile (internal/modules/cjs/loader.js:1164:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
+    at Module.load (internal/modules/cjs/loader.js:1049:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:937:14)
+    at Module.require (internal/modules/cjs/loader.js:1089:19)
+    at require (internal/modules/cjs/helpers.js:73:18)
+    at evaluate (  ...  /scripts/lib/evaluate.js:28:7)
+    at Object.<anonymous> (  ...  /scripts/review.js:119:1)
+    at Module._compile (internal/modules/cjs/loader.js:1200:30) 
 ```
 
 ```js
@@ -198,7 +195,7 @@ In the console, only failing asserts are printed.
 
 ## /4-testing-with-assert.js 
 
-> incomplete 
+> pass 
 >
 > [review source](../../../exercises/03-comparing-and-asserting/examples/4-testing-with-assert.js)
 
@@ -208,17 +205,8 @@ LOG: -- examples --
 + PASS: Assertion 2
 + PASS: Assertion 3
 LOG: -- practice exercises --
-UNCAUGHT: ReferenceError: _ is not defined
-    at Object.<anonymous> (  ...  /exercises/03-comparing-and-asserting/examples/4-testing-with-assert.js:28:33)
-    at Module._compile (module.js:652:30)
-    at Object.Module._extensions..js (module.js:663:10)
-    at Module.load (module.js:565:32)
-    at tryModuleLoad (module.js:505:12)
-    at Function.Module._load (module.js:497:3)
-    at Module.require (module.js:596:17)
-    at require (internal/module.js:11:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:12:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:116:1) 
++ PASS: Assertion 4
++ PASS: Assertion 5
 ```
 
 ```js
@@ -249,11 +237,13 @@ console.assert(isTrue3, 'Assertion 3');
 console.log('-- practice exercises --');
 
 const comparison4 = NaN === NaN;
-const isTrue4 = comparison4 === _;
+// const isTrue4 = comparison4 === _; // exercise
+const isTrue4 = comparison4 === false; // solution
 console.assert(isTrue4, 'Assertion 4');
 
 const comparison5 = (typeof 4) === (typeof '4');
-const isTrue5 = comparison5 === _;
+// const isTrue5 = comparison5 === _; // exercise
+const isTrue5 = comparison5 === false; // solution
 console.assert(isTrue5, 'Assertion 5');
 
 ```
@@ -262,11 +252,11 @@ console.assert(isTrue5, 'Assertion 5');
 
 ---
 
-## /extra-object-is.js 
+## /object-is.js 
 
 >  
 >
-> [review source](../../../exercises/03-comparing-and-asserting/examples/extra-object-is.js)
+> [review source](../../../exercises/03-comparing-and-asserting/examples/object-is.js)
 
 ```txt
 LOG: strictEqualityZeros:  boolean  
@@ -307,11 +297,11 @@ console.log('objectIsNaN:', typeof objectIsNaN, '\n', objectIsNaN);
 
 ---
 
-## /extra-strict-inequality.js 
+## /strict-inequality.js 
 
 >  
 >
-> [review source](../../../exercises/03-comparing-and-asserting/examples/extra-strict-inequality.js)
+> [review source](../../../exercises/03-comparing-and-asserting/examples/strict-inequality.js)
 
 ```txt
 LOG: -- false comparisons --

@@ -1,17 +1,14 @@
 # Debuggercises 
 
-## /exercises/01-variables/exercises 
+> 6/21/2020, 9:05:10 AM 
 
-> 6/16/2020, 5:29:16 PM 
+## [exercises](../../README.md)/[01-variables](../README.md)/exercises 
 
-[../README.md](../README.md)
-
-- [/1-let.js](#1-letjs)  
-- [/2-let.js](#2-letjs)  
-- [/3-let-or-const.js](#3-let-or-constjs)  
-- [/4-let-or-const.js](#4-let-or-constjs)  
-- [/5-let-or-const.js](#5-let-or-constjs)  
-
+- [/1-let.js](#1-letjs) - _incomplete_ 
+- [/2-let.js](#2-letjs) - _incomplete_ 
+- [/3-let-or-const.js](#3-let-or-constjs) - _incomplete_ 
+- [/4-let-or-const.js](#4-let-or-constjs) - _incomplete_ 
+- [/5-let-or-const.js](#5-let-or-constjs) - _incomplete_ 
 ---
 
 ## /1-let.js 
@@ -21,11 +18,17 @@
 > [review source](../../../exercises/01-variables/exercises/1-let.js)
 
 ```txt
-LOG: c
-LOG: bc
-LOG: bcd
-LOG: abcd
-LOG: abcde
+UNCAUGHT: ReferenceError: _ is not defined
+    at Object.<anonymous> (  ...  /exercises/01-variables/exercises/1-let.js:8:1)
+    at Module._compile (internal/modules/cjs/loader.js:1200:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
+    at Module.load (internal/modules/cjs/loader.js:1049:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:937:14)
+    at Module.require (internal/modules/cjs/loader.js:1089:19)
+    at require (internal/modules/cjs/helpers.js:73:18)
+    at evaluate (  ...  /scripts/lib/evaluate.js:28:7)
+    at Object.<anonymous> (  ...  /scripts/review.js:119:1)
+    at Module._compile (internal/modules/cjs/loader.js:1200:30) 
 ```
 
 ```js
@@ -64,9 +67,17 @@ console.log(firstFiveLetters); // should log "abcde"
 > [review source](../../../exercises/01-variables/exercises/2-let.js)
 
 ```txt
-LOG: chocolate cake
-LOG: chocolate cake with frosting
-LOG: chocolate cake with frosting and banana
+UNCAUGHT: ReferenceError: _ is not defined
+    at Object.<anonymous> (  ...  /exercises/01-variables/exercises/2-let.js:12:1)
+    at Module._compile (internal/modules/cjs/loader.js:1200:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
+    at Module.load (internal/modules/cjs/loader.js:1049:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:937:14)
+    at Module.require (internal/modules/cjs/loader.js:1089:19)
+    at require (internal/modules/cjs/helpers.js:73:18)
+    at evaluate (  ...  /scripts/lib/evaluate.js:28:7)
+    at Object.<anonymous> (  ...  /scripts/review.js:119:1)
+    at Module._compile (internal/modules/cjs/loader.js:1200:30) 
 ```
 
 ```js
@@ -103,14 +114,17 @@ console.log(desert); // should log 'chocolate cake with frosting and banana'
 > [review source](../../../exercises/01-variables/exercises/3-let-or-const.js)
 
 ```txt
-LOG: undefined
-LOG: birch
-LOG: myrtle
-LOG: aspen
-LOG: blue
-LOG: myrtle
-LOG: oak
-LOG: orange
+UNCAUGHT: ReferenceError: _ is not defined
+    at Object.<anonymous> (  ...  /exercises/01-variables/exercises/3-let-or-const.js:19:1)
+    at Module._compile (internal/modules/cjs/loader.js:1200:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
+    at Module.load (internal/modules/cjs/loader.js:1049:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:937:14)
+    at Module.require (internal/modules/cjs/loader.js:1089:19)
+    at require (internal/modules/cjs/helpers.js:73:18)
+    at evaluate (  ...  /scripts/lib/evaluate.js:28:7)
+    at Object.<anonymous> (  ...  /scripts/review.js:119:1)
+    at Module._compile (internal/modules/cjs/loader.js:1200:30) 
 ```
 
 ```js
@@ -175,14 +189,17 @@ console.log(aColor);
 > [review source](../../../exercises/01-variables/exercises/4-let-or-const.js)
 
 ```txt
-LOG: a
-LOG: b
-LOG: a
-LOG: undefined
-LOG: b
-LOG: c
-LOG: bd
-LOG: a
+UNCAUGHT: ReferenceError: _ is not defined
+    at Object.<anonymous> (  ...  /exercises/01-variables/exercises/4-let-or-const.js:19:1)
+    at Module._compile (internal/modules/cjs/loader.js:1200:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
+    at Module.load (internal/modules/cjs/loader.js:1049:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:937:14)
+    at Module.require (internal/modules/cjs/loader.js:1089:19)
+    at require (internal/modules/cjs/helpers.js:73:18)
+    at evaluate (  ...  /scripts/lib/evaluate.js:28:7)
+    at Object.<anonymous> (  ...  /scripts/review.js:119:1)
+    at Module._compile (internal/modules/cjs/loader.js:1200:30) 
 ```
 
 ```js
@@ -238,14 +255,17 @@ console.log(x); // should print 'a'
 > [review source](../../../exercises/01-variables/exercises/5-let-or-const.js)
 
 ```txt
-LOG: chair
-LOG: house
-LOG: table
-LOG: undefined
-LOG: apple
-LOG: house
-LOG: table
-LOG: apple, pear
+UNCAUGHT: ReferenceError: _ is not defined
+    at Object.<anonymous> (  ...  /exercises/01-variables/exercises/5-let-or-const.js:18:1)
+    at Module._compile (internal/modules/cjs/loader.js:1200:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
+    at Module.load (internal/modules/cjs/loader.js:1049:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:937:14)
+    at Module.require (internal/modules/cjs/loader.js:1089:19)
+    at require (internal/modules/cjs/helpers.js:73:18)
+    at evaluate (  ...  /scripts/lib/evaluate.js:28:7)
+    at Object.<anonymous> (  ...  /scripts/review.js:119:1)
+    at Module._compile (internal/modules/cjs/loader.js:1200:30) 
 ```
 
 ```js

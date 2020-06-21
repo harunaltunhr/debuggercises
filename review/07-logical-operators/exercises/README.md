@@ -1,46 +1,42 @@
 # Debuggercises 
 
-## /exercises/07-logical-operators/exercises 
+> 6/21/2020, 9:05:10 AM 
 
-> 6/16/2020, 5:29:16 PM 
+## [exercises](../../README.md)/[07-logical-operators](../README.md)/exercises 
 
-[../README.md](../README.md)
-
-- [/and.js](#andjs) - _error_ 
-- [/not.js](#notjs) - _error_ 
-- [/or.js](#orjs) - _error_ 
-- [/ternary.js](#ternaryjs) - _error_ 
-
+- [/and.js](#andjs) - _incomplete_ 
+- [/not.js](#notjs) - _incomplete_ 
+- [/or.js](#orjs) - _incomplete_ 
 ---
 
 ## /and.js 
 
-> error 
+> incomplete 
 >
 > [review source](../../../exercises/07-logical-operators/exercises/and.js)
 
 ```txt
-UNCAUGHT: AssertionError [ERR_ASSERTION]: Test 1
-    at Console.assert (console.js:194:23)
-    at Console.assert (  ...  /scripts/lib/console-catcher.js:13:21)
-    at Object.<anonymous> (  ...  /exercises/07-logical-operators/exercises/and.js:11:9)
-    at Module._compile (module.js:652:30)
-    at Object.Module._extensions..js (module.js:663:10)
-    at Module.load (module.js:565:32)
-    at tryModuleLoad (module.js:505:12)
-    at Function.Module._load (module.js:497:3)
-    at Module.require (module.js:596:17)
-    at require (internal/module.js:11:18) 
+UNCAUGHT: ReferenceError: _ is not defined
+    at and (  ...  /exercises/07-logical-operators/exercises/and.js:6:3)
+    at Object.<anonymous> (  ...  /exercises/07-logical-operators/exercises/and.js:10:19)
+    at Module._compile (internal/modules/cjs/loader.js:1200:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
+    at Module.load (internal/modules/cjs/loader.js:1049:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:937:14)
+    at Module.require (internal/modules/cjs/loader.js:1089:19)
+    at require (internal/modules/cjs/helpers.js:73:18)
+    at evaluate (  ...  /scripts/lib/evaluate.js:28:7)
+    at Object.<anonymous> (  ...  /scripts/review.js:119:1) 
 ```
 
 ```js
 'use strict';
 
 // write a function that behaves the same as &&
-//  ... without using &&
-function and(left, right) {
-
-}
+//  ... without using &&, only using ? :
+const and = (left, right) => {
+  return _ ? _ : _;
+};
 
 const _1_expect = 0;
 const _1_actual = and(0, 0);
@@ -86,32 +82,32 @@ console.assert(_9_actual === _9_expect, 'Test 9');
 
 ## /not.js 
 
-> error 
+> incomplete 
 >
 > [review source](../../../exercises/07-logical-operators/exercises/not.js)
 
 ```txt
-UNCAUGHT: AssertionError [ERR_ASSERTION]: Test 1
-    at Console.assert (console.js:194:23)
-    at Console.assert (  ...  /scripts/lib/console-catcher.js:13:21)
-    at Object.<anonymous> (  ...  /exercises/07-logical-operators/exercises/not.js:11:9)
-    at Module._compile (module.js:652:30)
-    at Object.Module._extensions..js (module.js:663:10)
-    at Module.load (module.js:565:32)
-    at tryModuleLoad (module.js:505:12)
-    at Function.Module._load (module.js:497:3)
-    at Module.require (module.js:596:17)
-    at require (internal/module.js:11:18) 
+UNCAUGHT: ReferenceError: _ is not defined
+    at not (  ...  /exercises/07-logical-operators/exercises/not.js:6:3)
+    at Object.<anonymous> (  ...  /exercises/07-logical-operators/exercises/not.js:10:19)
+    at Module._compile (internal/modules/cjs/loader.js:1200:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
+    at Module.load (internal/modules/cjs/loader.js:1049:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:937:14)
+    at Module.require (internal/modules/cjs/loader.js:1089:19)
+    at require (internal/modules/cjs/helpers.js:73:18)
+    at evaluate (  ...  /scripts/lib/evaluate.js:28:7)
+    at Object.<anonymous> (  ...  /scripts/review.js:119:1) 
 ```
 
 ```js
 'use strict';
 
 // write a function that behaves the same as !
-//  ... but doesn't use !
-function not(value) {
-
-}
+//  ... but doesn't use !, only using ? :
+const not = (value) => {
+  return _ ? _ : _;
+};
 
 const _1_expect = true;
 const _1_actual = not(0);
@@ -157,32 +153,32 @@ console.assert(_9_actual === _9_expect, 'Test 9');
 
 ## /or.js 
 
-> error 
+> incomplete 
 >
 > [review source](../../../exercises/07-logical-operators/exercises/or.js)
 
 ```txt
-UNCAUGHT: AssertionError [ERR_ASSERTION]: Test 1
-    at Console.assert (console.js:194:23)
-    at Console.assert (  ...  /scripts/lib/console-catcher.js:13:21)
-    at Object.<anonymous> (  ...  /exercises/07-logical-operators/exercises/or.js:11:9)
-    at Module._compile (module.js:652:30)
-    at Object.Module._extensions..js (module.js:663:10)
-    at Module.load (module.js:565:32)
-    at tryModuleLoad (module.js:505:12)
-    at Function.Module._load (module.js:497:3)
-    at Module.require (module.js:596:17)
-    at require (internal/module.js:11:18) 
+UNCAUGHT: ReferenceError: _ is not defined
+    at or (  ...  /exercises/07-logical-operators/exercises/or.js:6:3)
+    at Object.<anonymous> (  ...  /exercises/07-logical-operators/exercises/or.js:10:19)
+    at Module._compile (internal/modules/cjs/loader.js:1200:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
+    at Module.load (internal/modules/cjs/loader.js:1049:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:937:14)
+    at Module.require (internal/modules/cjs/loader.js:1089:19)
+    at require (internal/modules/cjs/helpers.js:73:18)
+    at evaluate (  ...  /scripts/lib/evaluate.js:28:7)
+    at Object.<anonymous> (  ...  /scripts/review.js:119:1) 
 ```
 
 ```js
 'use strict';
 
 // write a function that behaves the same as ||
-//  ... without using ||
-function or(left, right) {
-
-}
+//  ... without using ||, only using ? :
+const or = (left, right) => {
+  return _ ? _ : _;
+};
 
 const _1_expect = 0;
 const _1_actual = or(0, 0);
@@ -219,77 +215,6 @@ console.assert(_8_actual === _8_expect, 'Test 8');
 const _9_expect = Infinity;
 const _9_actual = or(Infinity, 'asdf');
 console.assert(_9_actual === _9_expect, 'Test 9');
-
-```
-
-[TOP](#debuggercises)
-
----
-
-## /ternary.js 
-
-> error 
->
-> [review source](../../../exercises/07-logical-operators/exercises/ternary.js)
-
-```txt
-UNCAUGHT: AssertionError [ERR_ASSERTION]: Test 1
-    at Console.assert (console.js:194:23)
-    at Console.assert (  ...  /scripts/lib/console-catcher.js:13:21)
-    at Object.<anonymous> (  ...  /exercises/07-logical-operators/exercises/ternary.js:11:9)
-    at Module._compile (module.js:652:30)
-    at Object.Module._extensions..js (module.js:663:10)
-    at Module.load (module.js:565:32)
-    at tryModuleLoad (module.js:505:12)
-    at Function.Module._load (module.js:497:3)
-    at Module.require (module.js:596:17)
-    at require (internal/module.js:11:18) 
-```
-
-```js
-'use strict';
-
-// write a function that behaves the same as ? :
-//  ... without using ? :
-function ternary(condition, first, second) {
-
-}
-
-const ternary1 = ternary(1, 'A', 'B');
-const isTrue1 = ternary1 === 'A';
-console.assert(isTrue1, 'Test 1');
-
-const ternary2 = ternary('non-empty strings', 1, 2);
-const isTrue2 = ternary2 === 1;
-console.assert(isTrue2, 'Test 2');
-
-const ternary3 = ternary(true, 'x', 'y');
-const isTrue3 = ternary3 === 'x';
-console.assert(isTrue3, 'Test 3');
-
-const ternary4 = ternary(undefined, 'hi!', 'bye.');
-const isTrue4 = ternary4 === 'bye.';
-console.assert(isTrue4, 'Test 4');
-
-const ternary5 = ternary(null, false, true);
-const isTrue5 = ternary5 === true;
-console.assert(isTrue5, 'Test 5');
-
-const ternary6 = ternary(false, 1, 1);
-const isTrue6 = ternary6 === 1;
-console.assert(isTrue6, 'Test 6');
-
-const ternary7 = ternary(0, Infinity, -Infinity);
-const isTrue7 = ternary7 === -Infinity;
-console.assert(isTrue7, 'Test 7');
-
-const ternary8 = ternary('', '', null);
-const isTrue8 = ternary8 === null;
-console.assert(isTrue8, 'Test 8');
-
-const ternary9 = ternary(NaN, 'A', 'B');
-const isTrue9 = ternary9 === 'B';
-console.assert(isTrue9, 'Test 9');
 
 ```
 

@@ -1,15 +1,12 @@
 # Debuggercises 
 
-## /exercises/06-explicit-coercion/exercises 
+> 6/21/2020, 9:05:10 AM 
 
-> 6/16/2020, 5:29:16 PM 
-
-[../README.md](../README.md)
+## [exercises](../../README.md)/[06-explicit-coercion](../README.md)/exercises 
 
 - [/1-write-expected.js](#1-write-expectedjs) - _incomplete_ 
 - [/2-write-arguments.js](#2-write-argumentsjs) - _incomplete_ 
-- [/3-write-function.js](#3-write-functionjs) - _error_ 
-
+- [/3-write-function.js](#3-write-functionjs) - _fail_ 
 ---
 
 ## /1-write-expected.js 
@@ -21,27 +18,27 @@
 ```txt
 UNCAUGHT: ReferenceError: _ is not defined
     at Object.<anonymous> (  ...  /exercises/06-explicit-coercion/exercises/1-write-expected.js:13:19)
-    at Module._compile (module.js:652:30)
-    at Object.Module._extensions..js (module.js:663:10)
-    at Module.load (module.js:565:32)
-    at tryModuleLoad (module.js:505:12)
-    at Function.Module._load (module.js:497:3)
-    at Module.require (module.js:596:17)
-    at require (internal/module.js:11:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:12:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:116:1) 
+    at Module._compile (internal/modules/cjs/loader.js:1200:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
+    at Module.load (internal/modules/cjs/loader.js:1049:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:937:14)
+    at Module.require (internal/modules/cjs/loader.js:1089:19)
+    at require (internal/modules/cjs/helpers.js:73:18)
+    at evaluate (  ...  /scripts/lib/evaluate.js:28:7)
+    at Object.<anonymous> (  ...  /scripts/review.js:119:1)
+    at Module._compile (internal/modules/cjs/loader.js:1200:30) 
 ```
 
 ```js
 'use strict';
 
-function mystery(x) {
+const mystery = (x) => {
   if (typeof x === 'boolean') { throw new TypeError('x cannot be a boolean'); }
 
   const booleaned = Boolean(x);
   const numbered = Number(booleaned);
   return numbered;
-}
+};
 
 // write the expected return value
 
@@ -74,7 +71,7 @@ const _7_actual = mystery(-1);
 console.assert(_7_actual === _7_expect, 'Test 7');
 
 const _8_expect = _;
-const _8_actual = mystery(true);
+const _8_actual = mystery('true');
 console.assert(_8_actual === _8_expect, 'Test 8');
 
 const _9_expect = _;
@@ -97,27 +94,27 @@ console.assert(_9_actual === _9_expect, 'Test 9');
 ```txt
 UNCAUGHT: ReferenceError: _ is not defined
     at Object.<anonymous> (  ...  /exercises/06-explicit-coercion/exercises/2-write-arguments.js:14:27)
-    at Module._compile (module.js:652:30)
-    at Object.Module._extensions..js (module.js:663:10)
-    at Module.load (module.js:565:32)
-    at tryModuleLoad (module.js:505:12)
-    at Function.Module._load (module.js:497:3)
-    at Module.require (module.js:596:17)
-    at require (internal/module.js:11:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:12:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:116:1) 
+    at Module._compile (internal/modules/cjs/loader.js:1200:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
+    at Module.load (internal/modules/cjs/loader.js:1049:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:937:14)
+    at Module.require (internal/modules/cjs/loader.js:1089:19)
+    at require (internal/modules/cjs/helpers.js:73:18)
+    at evaluate (  ...  /scripts/lib/evaluate.js:28:7)
+    at Object.<anonymous> (  ...  /scripts/review.js:119:1)
+    at Module._compile (internal/modules/cjs/loader.js:1200:30) 
 ```
 
 ```js
 'use strict';
 
-function mystery(x) {
+const mystery = (x) => {
   if (typeof x === 'string') { throw new TypeError('x cannot be a string'); }
 
   const stringed = String(x);
   const numbered = Number(stringed);
   return numbered;
-}
+};
 
 // find an argument to get the expected return value
 
@@ -192,9 +189,9 @@ UNCAUGHT: AssertionError [ERR_ASSERTION]: Test 1
    Number
    ===
 */
-function mystery(x, y) {
+const mystery = (x, y) => {
 
-}
+};
 
 // all of the test cases are correct
 

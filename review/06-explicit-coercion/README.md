@@ -1,10 +1,8 @@
 # Debuggercises 
 
-## /exercises/06-explicit-coercion 
+> 6/21/2020, 9:05:10 AM 
 
-> 6/16/2020, 5:29:16 PM 
-
-[../README.md](../README.md)
+## [exercises](../README.md)/06-explicit-coercion 
 
 - [/examples](./examples/README.md)
   - [/1-string.js](./examples/README.md#1-stringjs)  
@@ -15,4 +13,3 @@
   - [/1-write-expected.js](./exercises/README.md#1-write-expectedjs) - _incomplete_ 
   - [/2-write-arguments.js](./exercises/README.md#2-write-argumentsjs) - _incomplete_ 
   - [/3-write-function.js](./exercises/README.md#3-write-functionjs) - _error_ 
-
