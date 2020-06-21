@@ -3,7 +3,10 @@
 // write a function that behaves the same as ||
 //  ... without using ||
 function or(left, right) {
-
+    let result;
+    const booleanLeft = Boolean(left);
+    result = (booleanLeft== true ) ? left: right; 
+    return result;
 }
 
 const _1_expect = 0;

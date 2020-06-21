@@ -3,8 +3,14 @@
 // write a function that behaves the same as &&
 //  ... without using &&
 function and(left, right) {
+const booleanLeft = Boolean(left);
+const isFalse=booleanLeft=== false
+return isFalse ? left : right;
+
 
 }
+
+
 
 const _1_expect = 0;
 const _1_actual = and(0, 0);
