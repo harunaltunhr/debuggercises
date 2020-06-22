@@ -6,7 +6,10 @@ let c = 1;
 let temp = null;
 
 // write some code!
-
+temp=b;
+b=a;
+a=c;
+c=temp;
 
 
 // fill in the _ to pass the assertions

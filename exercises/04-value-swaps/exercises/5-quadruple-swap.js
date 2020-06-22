@@ -7,7 +7,11 @@ let d = 2;
 let temp = null;
 
 // write some code
-
+temp=b;
+b=d;
+d=c;
+c=a;
+a=temp;
 
 
 

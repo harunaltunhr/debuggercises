@@ -12,8 +12,8 @@ temp = a;
 const c = temp;
 
 // write your code below here, and above the assertions
-
-
+a=b;
+b=c;
 
 
 // replace the _ with a value to pass the assertions
