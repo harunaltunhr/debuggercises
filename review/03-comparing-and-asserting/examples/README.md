@@ -1,12 +1,12 @@
 # Debuggercises 
 
-> 6/21/2020, 9:05:10 AM 
+> 6/22/2020, 4:09:19 PM 
 
 ## [exercises](../../README.md)/[03-comparing-and-asserting](../README.md)/examples 
 
 - [/1-strict-equality.js](#1-strict-equalityjs)  
-- [/2-extra-assignment-vs-comparison.js](#2-extra-assignment-vs-comparisonjs) - _error (syntax)_ 
-- [/3-console-assert.js](#3-console-assertjs) - _fail_ 
+- [/2-extra-assignment-vs-comparison.js](#2-extra-assignment-vs-comparisonjs) - _error_ 
+- [/3-console-assert.js](#3-console-assertjs) - _error_ 
 - [/4-testing-with-assert.js](#4-testing-with-assertjs) - _pass_ 
 - [/object-is.js](#object-isjs)  
 - [/strict-inequality.js](#strict-inequalityjs)  
@@ -91,17 +91,17 @@ UNCAUGHT:   ...  /exercises/03-comparing-and-asserting/examples/2-extra-assignme
 'value 2' = variable; // uncomment this line for an error
 ^^^^^^^^^
 
-SyntaxError: Invalid left-hand side in assignment
-    at wrapSafe (internal/modules/cjs/loader.js:1116:16)
-    at Module._compile (internal/modules/cjs/loader.js:1164:27)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
-    at Module.load (internal/modules/cjs/loader.js:1049:32)
-    at Function.Module._load (internal/modules/cjs/loader.js:937:14)
-    at Module.require (internal/modules/cjs/loader.js:1089:19)
-    at require (internal/modules/cjs/helpers.js:73:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:28:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:119:1)
-    at Module._compile (internal/modules/cjs/loader.js:1200:30) 
+ReferenceError: Invalid left-hand side in assignment
+    at createScript (vm.js:80:10)
+    at Object.runInThisContext (vm.js:139:10)
+    at Module._compile (module.js:616:28)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Module.require (module.js:596:17)
+    at require (internal/module.js:11:18)
+    at evaluate (  ...  /scripts/lib/evaluate.js:28:7) 
 ```
 
 ```js

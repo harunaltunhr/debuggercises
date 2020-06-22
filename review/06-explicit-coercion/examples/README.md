@@ -1,13 +1,13 @@
 # Debuggercises 
 
-> 6/21/2020, 9:05:10 AM 
+> 6/22/2020, 4:09:19 PM 
 
 ## [exercises](../../README.md)/[06-explicit-coercion](../README.md)/examples 
 
 - [/1-string.js](#1-stringjs)  
 - [/2-boolean.js](#2-booleanjs)  
 - [/3-number.js](#3-numberjs)  
-- [/4-about-nan.js](#4-about-nanjs) - _fail_ 
+- [/4-about-nan.js](#4-about-nanjs) - _error_ 
 ---
 
 ## /1-string.js 

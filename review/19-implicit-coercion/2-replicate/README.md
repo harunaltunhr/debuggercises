@@ -1,36 +1,32 @@
 # Debuggercises 
 
-> 6/21/2020, 9:05:10 AM 
+> 6/22/2020, 4:09:19 PM 
 
 ## [exercises](../../README.md)/[19-implicit-coercion](../README.md)/2-replicate 
 
-- [/loose-inequality.js](#loose-inequalityjs) - _fail_ 
+- [/loose-inequality.js](#loose-inequalityjs) - _error_ 
 - [/remainder.js](#remainderjs) - _error_ 
-- [/unary-minus.js](#unary-minusjs) - _fail_ 
+- [/unary-minus.js](#unary-minusjs) - _error_ 
 ---
 
 ## /loose-inequality.js 
 
-> fail 
+> error 
 >
 > [review source](../../../exercises/19-implicit-coercion/2-replicate/loose-inequality.js)
 
 ```txt
-- FAIL: Test 1
-- FAIL: Test 2
-- FAIL: Test 3
-- FAIL: Test 4
-- FAIL: Test 5
-- FAIL: Test 6
-- FAIL: Test 7
-- FAIL: Test 8
-- FAIL: Test 9
-- FAIL: Test 10
-- FAIL: Test 11
-- FAIL: Test 12
-- FAIL: Test 13
-- FAIL: Test 14
-- FAIL: Test 15
+UNCAUGHT: AssertionError [ERR_ASSERTION]: Test 1
+    at Console.assert (console.js:194:23)
+    at Console.assert (  ...  /scripts/lib/console-catcher.js:13:21)
+    at Object.<anonymous> (  ...  /exercises/19-implicit-coercion/2-replicate/loose-inequality.js:18:9)
+    at Module._compile (module.js:652:30)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Module.require (module.js:596:17)
+    at require (internal/module.js:11:18) 
 ```
 
 ```js
@@ -152,15 +148,15 @@ console.assert(_15_copy === _15_native, 'Test 15');
 ```txt
 UNCAUGHT: ReferenceError: _1_expect is not defined
     at Object.<anonymous> (  ...  /exercises/19-implicit-coercion/2-replicate/remainder.js:17:26)
-    at Module._compile (internal/modules/cjs/loader.js:1200:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
-    at Module.load (internal/modules/cjs/loader.js:1049:32)
-    at Function.Module._load (internal/modules/cjs/loader.js:937:14)
-    at Module.require (internal/modules/cjs/loader.js:1089:19)
-    at require (internal/modules/cjs/helpers.js:73:18)
+    at Module._compile (module.js:652:30)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Module.require (module.js:596:17)
+    at require (internal/module.js:11:18)
     at evaluate (  ...  /scripts/lib/evaluate.js:28:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:119:1)
-    at Module._compile (internal/modules/cjs/loader.js:1200:30) 
+    at Object.<anonymous> (  ...  /scripts/review.js:119:1) 
 ```
 
 ```js
@@ -238,20 +234,22 @@ console.assert(Object.is(_9_expect, _9_native), 'Test 9');
 
 ## /unary-minus.js 
 
-> fail 
+> error 
 >
 > [review source](../../../exercises/19-implicit-coercion/2-replicate/unary-minus.js)
 
 ```txt
-- FAIL: Test 1
-- FAIL: Test 2
-- FAIL: Test 3
-- FAIL: Test 4
-- FAIL: Test 5
-- FAIL: Test 6
-- FAIL: Test 7
-- FAIL: Test 8
-- FAIL: Test 9
+UNCAUGHT: AssertionError [ERR_ASSERTION]: Test 1
+    at Console.assert (console.js:194:23)
+    at Console.assert (  ...  /scripts/lib/console-catcher.js:13:21)
+    at Object.<anonymous> (  ...  /exercises/19-implicit-coercion/2-replicate/unary-minus.js:15:9)
+    at Module._compile (module.js:652:30)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Module.require (module.js:596:17)
+    at require (internal/module.js:11:18) 
 ```
 
 ```js

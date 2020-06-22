@@ -1,6 +1,6 @@
 # Debuggercises 
 
-> 6/21/2020, 9:05:10 AM 
+> 6/22/2020, 4:09:19 PM 
 
 ## [exercises](../README.md)/10-conditional-statements 
 
@@ -14,9 +14,9 @@
 - [/1-execution-paths](./1-execution-paths/README.md)
   - [/1-write-expected.js](./1-execution-paths/README.md#1-write-expectedjs) - _incomplete_ 
   - [/2-write-arguments.js](./1-execution-paths/README.md#2-write-argumentsjs) - _incomplete_ 
-  - [/3-write-arguments.js](./1-execution-paths/README.md#3-write-argumentsjs) - _fail_ 
+  - [/3-write-arguments.js](./1-execution-paths/README.md#3-write-argumentsjs) - _error_ 
   - [/4-write-function.js](./1-execution-paths/README.md#4-write-functionjs) - _incomplete_ 
-  - [/5-write-function.js](./1-execution-paths/README.md#5-write-functionjs) - _fail_ 
+  - [/5-write-function.js](./1-execution-paths/README.md#5-write-functionjs) - _error_ 
 - [/2-conditional-bodies](./2-conditional-bodies/README.md)
   - [/1-write-expected.js](./2-conditional-bodies/README.md#1-write-expectedjs) - _incomplete_ 
   - [/2-write-arguments.js](./2-conditional-bodies/README.md#2-write-argumentsjs) - _incomplete_ 

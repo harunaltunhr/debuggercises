@@ -1,6 +1,6 @@
 # Debuggercises 
 
-> 6/21/2020, 9:05:10 AM 
+> 6/22/2020, 4:09:19 PM 
 
 ## [exercises](../README.md)/19-implicit-coercion 
 
@@ -21,6 +21,6 @@
   - [/less-than-or-equal-to.js](./1-write-tests-relational/README.md#less-than-or-equal-tojs) - _incomplete_ 
   - [/less-than.js](./1-write-tests-relational/README.md#less-thanjs) - _incomplete_ 
 - [/2-replicate](./2-replicate/README.md)
-  - [/loose-inequality.js](./2-replicate/README.md#loose-inequalityjs) - _fail_ 
+  - [/loose-inequality.js](./2-replicate/README.md#loose-inequalityjs) - _error_ 
   - [/remainder.js](./2-replicate/README.md#remainderjs) - _error_ 
-  - [/unary-minus.js](./2-replicate/README.md#unary-minusjs) - _fail_ 
+  - [/unary-minus.js](./2-replicate/README.md#unary-minusjs) - _error_ 
