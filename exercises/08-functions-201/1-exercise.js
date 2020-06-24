@@ -4,12 +4,12 @@
 //  hint: demorgan
 
 const notAndA = (x, y) => {
-  return _;
+  return !(x||y);
 };
 
 
 const notAndB = (x, y) => {
-  return _;
+  return !(x||y);
 };
 
 
