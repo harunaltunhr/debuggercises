@@ -1,6 +1,6 @@
 # Debuggercises 
 
-> 6/22/2020, 4:09:19 PM 
+> 6/24/2020, 9:58:49 PM 
 
 ## [exercises](../../README.md)/[16-for](../README.md)/examples 
 
@@ -178,15 +178,15 @@ LOG: C  48
 LOG: C  49
 UNCAUGHT: Error: Loop exceeded 50 iterations
     at Object.<anonymous> (  ...  /exercises/16-for/examples/3-for-infinite.js:18:65)
-    at Module._compile (module.js:652:30)
-    at Object.Module._extensions..js (module.js:663:10)
-    at Module.load (module.js:565:32)
-    at tryModuleLoad (module.js:505:12)
-    at Function.Module._load (module.js:497:3)
-    at Module.require (module.js:596:17)
-    at require (internal/module.js:11:18)
+    at Module._compile (internal/modules/cjs/loader.js:1200:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
+    at Module.load (internal/modules/cjs/loader.js:1049:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:937:14)
+    at Module.require (internal/modules/cjs/loader.js:1089:19)
+    at require (internal/modules/cjs/helpers.js:73:18)
     at evaluate (  ...  /scripts/lib/evaluate.js:28:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:119:1) 
+    at Object.<anonymous> (  ...  /scripts/review.js:119:1)
+    at Module._compile (internal/modules/cjs/loader.js:1200:30) 
 ```
 
 ```js

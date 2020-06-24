@@ -1,6 +1,6 @@
 # Debuggercises 
 
-> 6/22/2020, 4:09:19 PM 
+> 6/24/2020, 9:58:49 PM 
 
 ## /exercises 
 
@@ -34,8 +34,8 @@
 - [/03-comparing-and-asserting](./03-comparing-and-asserting/README.md)
   - [/examples](./03-comparing-and-asserting/examples/README.md)
     - [/1-strict-equality.js](./03-comparing-and-asserting/examples/README.md#1-strict-equalityjs)  
-    - [/2-extra-assignment-vs-comparison.js](./03-comparing-and-asserting/examples/README.md#2-extra-assignment-vs-comparisonjs) - _error_ 
-    - [/3-console-assert.js](./03-comparing-and-asserting/examples/README.md#3-console-assertjs) - _error_ 
+    - [/2-extra-assignment-vs-comparison.js](./03-comparing-and-asserting/examples/README.md#2-extra-assignment-vs-comparisonjs) - _error (syntax)_ 
+    - [/3-console-assert.js](./03-comparing-and-asserting/examples/README.md#3-console-assertjs) - _fail_ 
     - [/4-testing-with-assert.js](./03-comparing-and-asserting/examples/README.md#4-testing-with-assertjs) - _pass_ 
     - [/object-is.js](./03-comparing-and-asserting/examples/README.md#object-isjs)  
     - [/strict-inequality.js](./03-comparing-and-asserting/examples/README.md#strict-inequalityjs)  
@@ -44,9 +44,9 @@
     - [/2.js](./03-comparing-and-asserting/exercises/README.md#2js) - _pass_ 
 - [/04-value-swaps](./04-value-swaps/README.md)
   - [/example-swap-in-steps](./04-value-swaps/example-swap-in-steps/README.md)
-    - [/0-setup.js](./04-value-swaps/example-swap-in-steps/README.md#0-setupjs) - _error_ 
-    - [/1-store-y.js](./04-value-swaps/example-swap-in-steps/README.md#1-store-yjs) - _error_ 
-    - [/2-reassign-a.js](./04-value-swaps/example-swap-in-steps/README.md#2-reassign-ajs) - _error_ 
+    - [/0-setup.js](./04-value-swaps/example-swap-in-steps/README.md#0-setupjs) - _fail_ 
+    - [/1-store-y.js](./04-value-swaps/example-swap-in-steps/README.md#1-store-yjs) - _fail_ 
+    - [/2-reassign-a.js](./04-value-swaps/example-swap-in-steps/README.md#2-reassign-ajs) - _fail_ 
     - [/3-use-stored-y.js](./04-value-swaps/example-swap-in-steps/README.md#3-use-stored-yjs) - _pass_ 
   - [/exercises](./04-value-swaps/exercises/README.md)
     - [/1-double-swap.js](./04-value-swaps/exercises/README.md#1-double-swapjs) - _pass_ 
@@ -83,11 +83,11 @@
     - [/1-string.js](./06-explicit-coercion/examples/README.md#1-stringjs)  
     - [/2-boolean.js](./06-explicit-coercion/examples/README.md#2-booleanjs)  
     - [/3-number.js](./06-explicit-coercion/examples/README.md#3-numberjs)  
-    - [/4-about-nan.js](./06-explicit-coercion/examples/README.md#4-about-nanjs) - _error_ 
+    - [/4-about-nan.js](./06-explicit-coercion/examples/README.md#4-about-nanjs) - _fail_ 
   - [/exercises](./06-explicit-coercion/exercises/README.md)
     - [/1-write-expected.js](./06-explicit-coercion/exercises/README.md#1-write-expectedjs) - _pass_ 
     - [/2-write-arguments.js](./06-explicit-coercion/exercises/README.md#2-write-argumentsjs) - _pass_ 
-    - [/3-write-function.js](./06-explicit-coercion/exercises/README.md#3-write-functionjs) - _error_ 
+    - [/3-write-function.js](./06-explicit-coercion/exercises/README.md#3-write-functionjs) - _fail_ 
 - [/07-logical-operators](./07-logical-operators/README.md)
   - [/examples](./07-logical-operators/examples/README.md)
     - [/0-truthiness.js](./07-logical-operators/examples/README.md#0-truthinessjs)  
@@ -102,20 +102,20 @@
     - [/or.js](./07-logical-operators/exercises/README.md#orjs) - _pass_ 
 - [/08-functions-201](./08-functions-201/README.md)
   - [/0-example.js](./08-functions-201/README.md#0-examplejs) - _pass_ 
-  - [/1-exercise.js](./08-functions-201/README.md#1-exercisejs) - _incomplete_ 
-  - [/2-exercise.js](./08-functions-201/README.md#2-exercisejs) - _incomplete_ 
+  - [/1-exercise.js](./08-functions-201/README.md#1-exercisejs) - _pass_ 
+  - [/2-exercise.js](./08-functions-201/README.md#2-exercisejs) - _pass_ 
 - [/09-block-scope](./09-block-scope/README.md)
   - [/1-missing-values](./09-block-scope/1-missing-values/README.md)
-    - [/1.js](./09-block-scope/1-missing-values/README.md#1js) - _incomplete_ 
-    - [/2.js](./09-block-scope/1-missing-values/README.md#2js) - _incomplete_ 
+    - [/1.js](./09-block-scope/1-missing-values/README.md#1js) - _pass_ 
+    - [/2.js](./09-block-scope/1-missing-values/README.md#2js) - _pass_ 
   - [/2-missing-variables](./09-block-scope/2-missing-variables/README.md)
-    - [/1.js](./09-block-scope/2-missing-variables/README.md#1js) - _incomplete_ 
-    - [/2.js](./09-block-scope/2-missing-variables/README.md#2js) - _incomplete_ 
-    - [/3.js](./09-block-scope/2-missing-variables/README.md#3js) - _incomplete_ 
+    - [/1.js](./09-block-scope/2-missing-variables/README.md#1js) - _pass_ 
+    - [/2.js](./09-block-scope/2-missing-variables/README.md#2js) - _pass_ 
+    - [/3.js](./09-block-scope/2-missing-variables/README.md#3js) - _error_ 
   - [/3-assign-values](./09-block-scope/3-assign-values/README.md)
-    - [/1.js](./09-block-scope/3-assign-values/README.md#1js) - _incomplete_ 
-    - [/2.js](./09-block-scope/3-assign-values/README.md#2js) - _incomplete_ 
-    - [/3.js](./09-block-scope/3-assign-values/README.md#3js) - _incomplete_ 
+    - [/1.js](./09-block-scope/3-assign-values/README.md#1js) - _pass_ 
+    - [/2.js](./09-block-scope/3-assign-values/README.md#2js) - _pass_ 
+    - [/3.js](./09-block-scope/3-assign-values/README.md#3js) - _pass_ 
   - [/4-declare-and-assign](./09-block-scope/4-declare-and-assign/README.md)
     - [/1.js](./09-block-scope/4-declare-and-assign/README.md#1js) - _incomplete_ 
     - [/2.js](./09-block-scope/4-declare-and-assign/README.md#2js) - _incomplete_ 
@@ -129,11 +129,11 @@
     - [/5-nested-conditionals.js](./10-conditional-statements/0-examples/README.md#5-nested-conditionalsjs) - _pass_ 
     - [/6-unreachable-paths.js](./10-conditional-statements/0-examples/README.md#6-unreachable-pathsjs) - _pass_ 
   - [/1-execution-paths](./10-conditional-statements/1-execution-paths/README.md)
-    - [/1-write-expected.js](./10-conditional-statements/1-execution-paths/README.md#1-write-expectedjs) - _incomplete_ 
-    - [/2-write-arguments.js](./10-conditional-statements/1-execution-paths/README.md#2-write-argumentsjs) - _incomplete_ 
-    - [/3-write-arguments.js](./10-conditional-statements/1-execution-paths/README.md#3-write-argumentsjs) - _error_ 
-    - [/4-write-function.js](./10-conditional-statements/1-execution-paths/README.md#4-write-functionjs) - _incomplete_ 
-    - [/5-write-function.js](./10-conditional-statements/1-execution-paths/README.md#5-write-functionjs) - _error_ 
+    - [/1-write-expected.js](./10-conditional-statements/1-execution-paths/README.md#1-write-expectedjs) - _pass_ 
+    - [/2-write-arguments.js](./10-conditional-statements/1-execution-paths/README.md#2-write-argumentsjs) - _pass_ 
+    - [/3-write-arguments.js](./10-conditional-statements/1-execution-paths/README.md#3-write-argumentsjs) - _pass_ 
+    - [/4-write-function.js](./10-conditional-statements/1-execution-paths/README.md#4-write-functionjs) - _pass_ 
+    - [/5-write-function.js](./10-conditional-statements/1-execution-paths/README.md#5-write-functionjs) - _pass_ 
   - [/2-conditional-bodies](./10-conditional-statements/2-conditional-bodies/README.md)
     - [/1-write-expected.js](./10-conditional-statements/2-conditional-bodies/README.md#1-write-expectedjs) - _incomplete_ 
     - [/2-write-arguments.js](./10-conditional-statements/2-conditional-bodies/README.md#2-write-argumentsjs) - _incomplete_ 
@@ -162,9 +162,9 @@
     - [/3-pass-tests.js](./12-functions-301/1-fill-in-the-blanks/README.md#3-pass-testsjs) - _incomplete_ 
     - [/4-pass-tests.js](./12-functions-301/1-fill-in-the-blanks/README.md#4-pass-testsjs) - _incomplete_ 
   - [/2-fix-the-bugs](./12-functions-301/2-fix-the-bugs/README.md)
-    - [/1.js](./12-functions-301/2-fix-the-bugs/README.md#1js) - _error_ 
+    - [/1.js](./12-functions-301/2-fix-the-bugs/README.md#1js) - _fail_ 
     - [/2.js](./12-functions-301/2-fix-the-bugs/README.md#2js) - _error_ 
-    - [/3.js](./12-functions-301/2-fix-the-bugs/README.md#3js) - _error_ 
+    - [/3.js](./12-functions-301/2-fix-the-bugs/README.md#3js) - _fail_ 
 - [/13-roles-of-variables](./13-roles-of-variables/README.md)
   - [/readme.js](./13-roles-of-variables/README.md#readmejs)  
   - [/back-tracing.js](./13-roles-of-variables/README.md#back-tracingjs)  
@@ -232,9 +232,9 @@
     - [/less-than-or-equal-to.js](./19-implicit-coercion/1-write-tests-relational/README.md#less-than-or-equal-tojs) - _incomplete_ 
     - [/less-than.js](./19-implicit-coercion/1-write-tests-relational/README.md#less-thanjs) - _incomplete_ 
   - [/2-replicate](./19-implicit-coercion/2-replicate/README.md)
-    - [/loose-inequality.js](./19-implicit-coercion/2-replicate/README.md#loose-inequalityjs) - _error_ 
+    - [/loose-inequality.js](./19-implicit-coercion/2-replicate/README.md#loose-inequalityjs) - _fail_ 
     - [/remainder.js](./19-implicit-coercion/2-replicate/README.md#remainderjs) - _error_ 
-    - [/unary-minus.js](./19-implicit-coercion/2-replicate/README.md#unary-minusjs) - _error_ 
+    - [/unary-minus.js](./19-implicit-coercion/2-replicate/README.md#unary-minusjs) - _fail_ 
 - [/20-operator-precedence](./20-operator-precedence/README.md)
   - [/0-examples](./20-operator-precedence/0-examples/README.md)
     - [/readme.js](./20-operator-precedence/0-examples/README.md#readmejs) - _pass_ 

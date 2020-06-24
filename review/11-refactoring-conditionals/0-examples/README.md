@@ -1,6 +1,6 @@
 # Debuggercises 
 
-> 6/22/2020, 4:09:19 PM 
+> 6/24/2020, 9:58:49 PM 
 
 ## [exercises](../../README.md)/[11-refactoring-conditionals](../README.md)/0-examples 
 
@@ -21,17 +21,17 @@ UNCAUGHT:   ...  /exercises/11-refactoring-conditionals/0-examples/0-statement-a
 const ifResult = if (value) {
                  ^^
 
-SyntaxError: Unexpected token if
-    at createScript (vm.js:80:10)
-    at Object.runInThisContext (vm.js:139:10)
-    at Module._compile (module.js:616:28)
-    at Object.Module._extensions..js (module.js:663:10)
-    at Module.load (module.js:565:32)
-    at tryModuleLoad (module.js:505:12)
-    at Function.Module._load (module.js:497:3)
-    at Module.require (module.js:596:17)
-    at require (internal/module.js:11:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:28:7) 
+SyntaxError: Unexpected token 'if'
+    at wrapSafe (internal/modules/cjs/loader.js:1116:16)
+    at Module._compile (internal/modules/cjs/loader.js:1164:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
+    at Module.load (internal/modules/cjs/loader.js:1049:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:937:14)
+    at Module.require (internal/modules/cjs/loader.js:1089:19)
+    at require (internal/modules/cjs/helpers.js:73:18)
+    at evaluate (  ...  /scripts/lib/evaluate.js:28:7)
+    at Object.<anonymous> (  ...  /scripts/review.js:119:1)
+    at Module._compile (internal/modules/cjs/loader.js:1200:30) 
 ```
 
 ```js

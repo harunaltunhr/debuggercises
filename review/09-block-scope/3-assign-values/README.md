@@ -1,41 +1,33 @@
 # Debuggercises 
 
-> 6/22/2020, 4:09:19 PM 
+> 6/24/2020, 9:58:49 PM 
 
 ## [exercises](../../README.md)/[09-block-scope](../README.md)/3-assign-values 
 
-- [/1.js](#1js) - _incomplete_ 
-- [/2.js](#2js) - _incomplete_ 
-- [/3.js](#3js) - _incomplete_ 
+- [/1.js](#1js) - _pass_ 
+- [/2.js](#2js) - _pass_ 
+- [/3.js](#3js) - _pass_ 
 ---
 
 ## /1.js 
 
-> incomplete 
+> pass 
 >
 > [review source](../../../exercises/09-block-scope/3-assign-values/1.js)
 
 ```txt
-UNCAUGHT: ReferenceError: _ is not defined
-    at Object.<anonymous> (  ...  /exercises/09-block-scope/3-assign-values/1.js:3:11)
-    at Module._compile (module.js:652:30)
-    at Object.Module._extensions..js (module.js:663:10)
-    at Module.load (module.js:565:32)
-    at tryModuleLoad (module.js:505:12)
-    at Function.Module._load (module.js:497:3)
-    at Module.require (module.js:596:17)
-    at require (internal/module.js:11:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:28:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:119:1) 
++ PASS: Test 1
++ PASS: Test 2
++ PASS: Test 3
 ```
 
 ```js
 'use strict';
 
-const a = _;
+const a = '12';
 console.assert(a === '12', 'Test 1');
 {
-  const a = _;
+  const a = true;
   console.assert(a === true, 'Test 2');
 }
 console.assert(a === '12', 'Test 3');
@@ -48,32 +40,25 @@ console.assert(a === '12', 'Test 3');
 
 ## /2.js 
 
-> incomplete 
+> pass 
 >
 > [review source](../../../exercises/09-block-scope/3-assign-values/2.js)
 
 ```txt
-UNCAUGHT: ReferenceError: _ is not defined
-    at Object.<anonymous> (  ...  /exercises/09-block-scope/3-assign-values/2.js:3:9)
-    at Module._compile (module.js:652:30)
-    at Object.Module._extensions..js (module.js:663:10)
-    at Module.load (module.js:565:32)
-    at tryModuleLoad (module.js:505:12)
-    at Function.Module._load (module.js:497:3)
-    at Module.require (module.js:596:17)
-    at require (internal/module.js:11:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:28:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:119:1) 
++ PASS: Test 1: x
++ PASS: Test 2: x
++ PASS: Test 3: y
++ PASS: Test 4: x
 ```
 
 ```js
 'use strict';
 
-let x = _;
+let x = null;
 console.assert(x === null, 'Test 1: x');
 {
-  x = _;
-  const y = _;
+  x = false;
+  const y = null;
 
   console.assert(x === false, 'Test 2: x');
   console.assert(y === null, 'Test 3: y');
@@ -88,37 +73,30 @@ console.assert(x === false, 'Test 4: x');
 
 ## /3.js 
 
-> incomplete 
+> pass 
 >
 > [review source](../../../exercises/09-block-scope/3-assign-values/3.js)
 
 ```txt
-UNCAUGHT: ReferenceError: _ is not defined
-    at Object.<anonymous> (  ...  /exercises/09-block-scope/3-assign-values/3.js:3:9)
-    at Module._compile (module.js:652:30)
-    at Object.Module._extensions..js (module.js:663:10)
-    at Module.load (module.js:565:32)
-    at tryModuleLoad (module.js:505:12)
-    at Function.Module._load (module.js:497:3)
-    at Module.require (module.js:596:17)
-    at require (internal/module.js:11:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:28:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:119:1) 
++ PASS: Test 1: m
++ PASS: Test 2: m
++ PASS: Test 3: l
++ PASS: Test 4: m
 ```
 
 ```js
 'use strict';
 
-let m = _;
+let m = 'tall';
 console.assert(m === 'tall', 'Test 1: m');
 {
-  let l = _;
-  const m = _;
-  l = _;
+  let l = ' ';
+  const m = 'short';
+  l = 'mini';
   console.assert(m === 'short', 'Test 2: m');
   console.assert(l === 'mini', 'Test 3: l');
 }
-m = _;
+m = 'medium';
 console.assert(m === 'medium', 'Test 4: m');
 
 ```

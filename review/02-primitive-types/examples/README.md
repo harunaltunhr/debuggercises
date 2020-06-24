@@ -1,6 +1,6 @@
 # Debuggercises 
 
-> 6/22/2020, 4:09:19 PM 
+> 6/24/2020, 9:58:49 PM 
 
 ## [exercises](../../README.md)/[02-primitive-types](../README.md)/examples 
 

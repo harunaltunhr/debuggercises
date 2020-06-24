@@ -1,32 +1,27 @@
 # Debuggercises 
 
-> 6/22/2020, 4:09:19 PM 
+> 6/24/2020, 9:58:49 PM 
 
 ## [exercises](../../README.md)/[12-functions-301](../README.md)/2-fix-the-bugs 
 
-- [/1.js](#1js) - _error_ 
+- [/1.js](#1js) - _fail_ 
 - [/2.js](#2js) - _error_ 
-- [/3.js](#3js) - _error_ 
+- [/3.js](#3js) - _fail_ 
 ---
 
 ## /1.js 
 
-> error 
+> fail 
 >
 > [review source](../../../exercises/12-functions-301/2-fix-the-bugs/1.js)
 
 ```txt
-UNCAUGHT: AssertionError [ERR_ASSERTION]: Test 1
-    at Console.assert (console.js:194:23)
-    at Console.assert (  ...  /scripts/lib/console-catcher.js:13:21)
-    at Object.<anonymous> (  ...  /exercises/12-functions-301/2-fix-the-bugs/1.js:33:9)
-    at Module._compile (module.js:652:30)
-    at Object.Module._extensions..js (module.js:663:10)
-    at Module.load (module.js:565:32)
-    at tryModuleLoad (module.js:505:12)
-    at Function.Module._load (module.js:497:3)
-    at Module.require (module.js:596:17)
-    at require (internal/module.js:11:18) 
+- FAIL: Test 1
+- FAIL: Test 2
+- FAIL: Test 3
+- FAIL: Test 4
+- FAIL: Test 5
+- FAIL: Test 6
 ```
 
 ```js
@@ -100,14 +95,14 @@ console.assert(_6_actual === _6_expect, 'Test 6');
 UNCAUGHT: TypeError: Cannot create property 'Length' on string 'carboat'
     at areNotSameLength (  ...  /exercises/12-functions-301/2-fix-the-bugs/2.js:18:19)
     at Object.<anonymous> (  ...  /exercises/12-functions-301/2-fix-the-bugs/2.js:32:19)
-    at Module._compile (module.js:652:30)
-    at Object.Module._extensions..js (module.js:663:10)
-    at Module.load (module.js:565:32)
-    at tryModuleLoad (module.js:505:12)
-    at Function.Module._load (module.js:497:3)
-    at Module.require (module.js:596:17)
-    at require (internal/module.js:11:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:28:7) 
+    at Module._compile (internal/modules/cjs/loader.js:1200:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
+    at Module.load (internal/modules/cjs/loader.js:1049:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:937:14)
+    at Module.require (internal/modules/cjs/loader.js:1089:19)
+    at require (internal/modules/cjs/helpers.js:73:18)
+    at evaluate (  ...  /scripts/lib/evaluate.js:28:7)
+    at Object.<anonymous> (  ...  /scripts/review.js:119:1) 
 ```
 
 ```js
@@ -173,22 +168,17 @@ console.assert(_6_actual === _6_expect, 'Test 6');
 
 ## /3.js 
 
-> error 
+> fail 
 >
 > [review source](../../../exercises/12-functions-301/2-fix-the-bugs/3.js)
 
 ```txt
-UNCAUGHT: AssertionError [ERR_ASSERTION]: Test 1
-    at Console.assert (console.js:194:23)
-    at Console.assert (  ...  /scripts/lib/console-catcher.js:13:21)
-    at Object.<anonymous> (  ...  /exercises/12-functions-301/2-fix-the-bugs/3.js:36:9)
-    at Module._compile (module.js:652:30)
-    at Object.Module._extensions..js (module.js:663:10)
-    at Module.load (module.js:565:32)
-    at tryModuleLoad (module.js:505:12)
-    at Function.Module._load (module.js:497:3)
-    at Module.require (module.js:596:17)
-    at require (internal/module.js:11:18) 
+- FAIL: Test 1
+- FAIL: Test 2
+- FAIL: Test 3
+- FAIL: Test 4
+- FAIL: Test 5
+- FAIL: Test 6
 ```
 
 ```js

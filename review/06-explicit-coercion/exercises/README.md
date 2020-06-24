@@ -1,12 +1,12 @@
 # Debuggercises 
 
-> 6/22/2020, 4:09:19 PM 
+> 6/24/2020, 9:58:49 PM 
 
 ## [exercises](../../README.md)/[06-explicit-coercion](../README.md)/exercises 
 
 - [/1-write-expected.js](#1-write-expectedjs) - _pass_ 
 - [/2-write-arguments.js](#2-write-argumentsjs) - _pass_ 
-- [/3-write-function.js](#3-write-functionjs) - _error_ 
+- [/3-write-function.js](#3-write-functionjs) - _fail_ 
 ---
 
 ## /1-write-expected.js 
@@ -159,22 +159,20 @@ console.assert(Object.is(_9_actual, _9_expect), 'Test 9');
 
 ## /3-write-function.js 
 
-> error 
+> fail 
 >
 > [review source](../../../exercises/06-explicit-coercion/exercises/3-write-function.js)
 
 ```txt
-UNCAUGHT: AssertionError [ERR_ASSERTION]: Test 1
-    at Console.assert (console.js:194:23)
-    at Console.assert (  ...  /scripts/lib/console-catcher.js:13:21)
-    at Object.<anonymous> (  ...  /exercises/06-explicit-coercion/exercises/3-write-function.js:16:9)
-    at Module._compile (module.js:652:30)
-    at Object.Module._extensions..js (module.js:663:10)
-    at Module.load (module.js:565:32)
-    at tryModuleLoad (module.js:505:12)
-    at Function.Module._load (module.js:497:3)
-    at Module.require (module.js:596:17)
-    at require (internal/module.js:11:18) 
+- FAIL: Test 1
+- FAIL: Test 2
+- FAIL: Test 3
+- FAIL: Test 4
+- FAIL: Test 5
+- FAIL: Test 6
+- FAIL: Test 7
+- FAIL: Test 8
+- FAIL: Test 9
 ```
 
 ```js

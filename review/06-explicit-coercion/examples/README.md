@@ -1,13 +1,13 @@
 # Debuggercises 
 
-> 6/22/2020, 4:09:19 PM 
+> 6/24/2020, 9:58:49 PM 
 
 ## [exercises](../../README.md)/[06-explicit-coercion](../README.md)/examples 
 
 - [/1-string.js](#1-stringjs)  
 - [/2-boolean.js](#2-booleanjs)  
 - [/3-number.js](#3-numberjs)  
-- [/4-about-nan.js](#4-about-nanjs) - _error_ 
+- [/4-about-nan.js](#4-about-nanjs) - _fail_ 
 ---
 
 ## /1-string.js 
@@ -210,24 +210,29 @@ console.log(9, typeof _9_toCast, _9_toCast, '-->', typeof _9_number, _9_number);
 
 ## /4-about-nan.js 
 
-> error 
+> fail 
 >
 > [review source](../../../exercises/06-explicit-coercion/examples/4-about-nan.js)
 
 ```txt
 LOG: --- NaN does not equal NaN! 
 + PASS: NaN is not equal to NaN
-UNCAUGHT: AssertionError [ERR_ASSERTION]: NaN is equal to NaN
-    at Console.assert (console.js:194:23)
-    at Console.assert (  ...  /scripts/lib/console-catcher.js:13:21)
-    at Object.<anonymous> (  ...  /exercises/06-explicit-coercion/examples/4-about-nan.js:14:9)
-    at Module._compile (module.js:652:30)
-    at Object.Module._extensions..js (module.js:663:10)
-    at Module.load (module.js:565:32)
-    at tryModuleLoad (module.js:505:12)
-    at Function.Module._load (module.js:497:3)
-    at Module.require (module.js:596:17)
-    at require (internal/module.js:11:18) 
+- FAIL: NaN is equal to NaN
+LOG: --- Number.isNaN(x) returns true if a value is NaN 
+LOG: boolean  true
+LOG: boolean  false
+LOG: boolean  false
+LOG: boolean  false
+LOG: --- isNaN(x) returns true if a value casts to NaN 
+LOG: boolean  true
+LOG: boolean  true
+LOG: boolean  true
+LOG: boolean  false
+LOG: --- isNaN is the same as Number then Number.isNaN
+LOG: boolean  true
+LOG: boolean  true
+LOG: boolean  true
+LOG: boolean  false
 ```
 
 ```js

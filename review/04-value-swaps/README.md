@@ -1,13 +1,13 @@
 # Debuggercises 
 
-> 6/22/2020, 4:09:19 PM 
+> 6/24/2020, 9:58:49 PM 
 
 ## [exercises](../README.md)/04-value-swaps 
 
 - [/example-swap-in-steps](./example-swap-in-steps/README.md)
-  - [/0-setup.js](./example-swap-in-steps/README.md#0-setupjs) - _error_ 
-  - [/1-store-y.js](./example-swap-in-steps/README.md#1-store-yjs) - _error_ 
-  - [/2-reassign-a.js](./example-swap-in-steps/README.md#2-reassign-ajs) - _error_ 
+  - [/0-setup.js](./example-swap-in-steps/README.md#0-setupjs) - _fail_ 
+  - [/1-store-y.js](./example-swap-in-steps/README.md#1-store-yjs) - _fail_ 
+  - [/2-reassign-a.js](./example-swap-in-steps/README.md#2-reassign-ajs) - _fail_ 
   - [/3-use-stored-y.js](./example-swap-in-steps/README.md#3-use-stored-yjs) - _pass_ 
 - [/exercises](./exercises/README.md)
   - [/1-double-swap.js](./exercises/README.md#1-double-swapjs) - _pass_ 
