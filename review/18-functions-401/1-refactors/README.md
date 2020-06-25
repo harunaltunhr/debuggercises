@@ -1,28 +1,33 @@
 # Debuggercises 
 
-> 6/25/2020, 7:46:56 AM 
+> 6/25/2020, 11:09:04 PM 
 
 ## [exercises](../../README.md)/[18-functions-401](../README.md)/1-refactors 
 
-- [/1-implicit-to-explicit.js](#1-implicit-to-explicitjs) - _pass_ 
+- [/1-implicit-to-explicit.js](#1-implicit-to-explicitjs) - _error_ 
 - [/2-implicit-to-explicit.js](#2-implicit-to-explicitjs) - _pass_ 
-- [/3-explicit-to-implicit.js](#3-explicit-to-implicitjs) - _pass_ 
-- [/4-explicit-to-implicit.js](#4-explicit-to-implicitjs) - _pass_ 
+- [/3-explicit-to-implicit.js](#3-explicit-to-implicitjs) - _error_ 
+- [/4-explicit-to-implicit.js](#4-explicit-to-implicitjs) - _error_ 
 ---
 
 ## /1-implicit-to-explicit.js 
 
-> pass 
+> error 
 >
 > [review source](../../../exercises/18-functions-401/1-refactors/1-implicit-to-explicit.js)
 
 ```txt
-+ PASS: Test 1
-+ PASS: Test 2
-+ PASS: Test 3
-+ PASS: Test 4
-+ PASS: Test 5
-+ PASS: Test 6
+UNCAUGHT: ReferenceError: result is not defined
+    at mystery (  ...  /exercises/18-functions-401/1-refactors/1-implicit-to-explicit.js:13:10)
+    at Object.<anonymous> (  ...  /exercises/18-functions-401/1-refactors/1-implicit-to-explicit.js:23:19)
+    at Module._compile (internal/modules/cjs/loader.js:1200:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
+    at Module.load (internal/modules/cjs/loader.js:1049:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:937:14)
+    at Module.require (internal/modules/cjs/loader.js:1089:19)
+    at require (internal/modules/cjs/helpers.js:73:18)
+    at evaluate (  ...  /scripts/lib/evaluate.js:28:7)
+    at Object.<anonymous> (  ...  /scripts/review.js:119:1) 
 ```
 
 ```js
@@ -35,9 +40,15 @@
  * @param {any} b
  * @returns {any}
  */
-const mystery = (a, b) => (Boolean(a) !== Boolean(b))
-  || b ? a && b : !b && !a;
-
+const mystery = (a,b) => {if(Boolean(a) !== Boolean(b)){
+  result = a && b;
+} else if(b){
+  result = (a && b);
+} else{
+  result = (!b && !a);
+}
+return result
+}
 
 const _1_arg1 = 1;
 const _1_arg2 = 1;
@@ -110,7 +121,20 @@ console.assert(_6_actual === _6_expect, 'Test 6');
 const mystery = (a, b) => typeof a !== b
   || !b
   && (Number.isNaN(b) || isNaN(a));
+const myster= (a,b) =>{
+  if (typeof a !== b || !b){
+    if(Number.isNaN(b)){
+      result = true;
+    }else if(isNaN(a)){
+      result = true;
+    }
+    else{
+      result = false;
+    }
 
+    return result ;
+}
+ }
 
 const _1_arg1 = 1;
 const _1_arg2 = 'number';
@@ -157,17 +181,22 @@ console.assert(_6_actual === _6_expect, 'Test 6');
 
 ## /3-explicit-to-implicit.js 
 
-> pass 
+> error 
 >
 > [review source](../../../exercises/18-functions-401/1-refactors/3-explicit-to-implicit.js)
 
 ```txt
-+ PASS: Test 1
-+ PASS: Test 2
-+ PASS: Test 3
-+ PASS: Test 4
-+ PASS: Test 5
-+ PASS: Test 6
+UNCAUGHT: ReferenceError: result is not defined
+    at mystery (  ...  /exercises/18-functions-401/1-refactors/3-explicit-to-implicit.js:14:14)
+    at Object.<anonymous> (  ...  /exercises/18-functions-401/1-refactors/3-explicit-to-implicit.js:28:19)
+    at Module._compile (internal/modules/cjs/loader.js:1200:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
+    at Module.load (internal/modules/cjs/loader.js:1049:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:937:14)
+    at Module.require (internal/modules/cjs/loader.js:1089:19)
+    at require (internal/modules/cjs/helpers.js:73:18)
+    at evaluate (  ...  /scripts/lib/evaluate.js:28:7)
+    at Object.<anonymous> (  ...  /scripts/review.js:119:1) 
 ```
 
 ```js
@@ -180,12 +209,20 @@ console.assert(_6_actual === _6_expect, 'Test 6');
  * @param {any} b
  * @returns {number}
  */
-const mystery = (a, b) => {
-  const result = Number(typeof a === typeof b)
-    && (a > b) ? Number(a) : Number(b);
-  return result;
-};
 
+const mystery = (a, b) => {
+  if(Number(typeof a === typeof b)){
+    if((a > b)){
+      result = Number(a);
+    } else{
+      result = Number(b);
+    }
+  }
+  else{
+    result = Number(b);
+  }
+  return result;
+}
 
 const _1_arg1 = 'string';
 const _1_arg2 = '14';
@@ -232,17 +269,22 @@ console.assert(Object.is(_6_actual, _6_expect), 'Test 6');
 
 ## /4-explicit-to-implicit.js 
 
-> pass 
+> error 
 >
 > [review source](../../../exercises/18-functions-401/1-refactors/4-explicit-to-implicit.js)
 
 ```txt
-+ PASS: Test 1
-+ PASS: Test 2
-+ PASS: Test 3
-+ PASS: Test 4
-+ PASS: Test 5
-+ PASS: Test 6
+UNCAUGHT: ReferenceError: result is not defined
+    at mystery (  ...  /exercises/18-functions-401/1-refactors/4-explicit-to-implicit.js:11:10)
+    at Object.<anonymous> (  ...  /exercises/18-functions-401/1-refactors/4-explicit-to-implicit.js:23:19)
+    at Module._compile (internal/modules/cjs/loader.js:1200:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
+    at Module.load (internal/modules/cjs/loader.js:1049:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:937:14)
+    at Module.require (internal/modules/cjs/loader.js:1089:19)
+    at require (internal/modules/cjs/helpers.js:73:18)
+    at evaluate (  ...  /scripts/lib/evaluate.js:28:7)
+    at Object.<anonymous> (  ...  /scripts/review.js:119:1) 
 ```
 
 ```js
@@ -255,10 +297,14 @@ console.assert(Object.is(_6_actual, _6_expect), 'Test 6');
  * @param {any} b
  * @returns {string}
  */
-const mystery = (a, b) => {
-  const result = String(a) || String(b);
+const mystery = (a, b) => {if(String(a)){
+  result = String(a);
+}
+  else{
+   result = String(b);
+  }
   return result;
-};
+}
 
 
 const _1_arg1 = 'string';
