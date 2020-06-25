@@ -1,11 +1,11 @@
 # Debuggercises 
 
-> 6/25/2020, 11:09:04 PM 
+> 6/25/2020, 11:26:23 PM 
 
 ## [exercises](../../README.md)/[07-logical-operators](../README.md)/exercises 
 
 - [/and.js](#andjs) - _pass_ 
-- [/not.js](#notjs) - _error_ 
+- [/not.js](#notjs) - _pass_ 
 - [/or.js](#orjs) - _pass_ 
 ---
 
@@ -86,22 +86,20 @@ console.assert(_9_actual === _9_expect, 'Test 9');
 
 ## /not.js 
 
-> error 
+> pass 
 >
 > [review source](../../../exercises/07-logical-operators/exercises/not.js)
 
 ```txt
-UNCAUGHT: ReferenceError: True is not defined
-    at not (  ...  /exercises/07-logical-operators/exercises/not.js:7:14)
-    at Object.<anonymous> (  ...  /exercises/07-logical-operators/exercises/not.js:13:19)
-    at Module._compile (internal/modules/cjs/loader.js:1200:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
-    at Module.load (internal/modules/cjs/loader.js:1049:32)
-    at Function.Module._load (internal/modules/cjs/loader.js:937:14)
-    at Module.require (internal/modules/cjs/loader.js:1089:19)
-    at require (internal/modules/cjs/helpers.js:73:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:28:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:119:1) 
++ PASS: Test 1
++ PASS: Test 2
++ PASS: Test 3
++ PASS: Test 4
++ PASS: Test 5
++ PASS: Test 6
++ PASS: Test 7
++ PASS: Test 8
++ PASS: Test 9
 ```
 
 ```js
@@ -110,10 +108,9 @@ UNCAUGHT: ReferenceError: True is not defined
 // write a function that behaves the same as !
 //  ... but doesn't use !
 function not(value) {
-const booleanValue= Boolean(value);
-const isTrue=True;
-const notValue= isTrue===booleanValue;
-return notValue ? true : false
+const notValue = (Boolean (value)===true) ? false : true;
+return notValue;
+
 }
 
 const _1_expect = true;
