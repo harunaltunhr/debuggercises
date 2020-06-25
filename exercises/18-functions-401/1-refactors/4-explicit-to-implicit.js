@@ -7,10 +7,14 @@
  * @param {any} b
  * @returns {string}
  */
-const mystery = (a, b) => {
-  const result = String(a) || String(b);
+const mystery = (a, b) => {if(String(a)){
+  result = String(a);
+}
+  else{
+   result = String(b);
+  }
   return result;
-};
+}
 
 
 const _1_arg1 = 'string';

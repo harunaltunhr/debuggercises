@@ -3,12 +3,8 @@
 // refactor this function ot use a ternary operator
 const conditional = (a, b) => {
   let result;
-  if (a && b) {
-    result = !a;
-  } else {
-    result = a === b;
-  }
-  return result;
+  result= (a&&b) ? !a : (a===b) ? !a : false;
+  return result; 
 };
 
 // path 1

@@ -7,9 +7,15 @@
  * @param {any} b
  * @returns {any}
  */
-const mystery = (a, b) => (Boolean(a) !== Boolean(b))
-  || b ? a && b : !b && !a;
-
+const mystery = (a,b) => {if(Boolean(a) !== Boolean(b)){
+  result = a && b;
+} else if(b){
+  result = (a && b);
+} else{
+  result = (!b && !a);
+}
+return result
+}
 
 const _1_arg1 = 1;
 const _1_arg2 = 1;

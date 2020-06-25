@@ -8,9 +8,10 @@
 const repeatLengthTimes = (toRepeat) => {
   if (typeof toRepeat !== 'string') { throw new TypeError('toRepeat'); }
 
-  let result = 0;
-  for (let i = 1; i < toRepeat.length; i++) {
+  let result ='';
+  for (let i=0; i < toRepeat.length; i++) {
     result = `${toRepeat}${result}`;
+
   }
 
   if (typeof result !== 'string') { throw new TypeError('result'); }

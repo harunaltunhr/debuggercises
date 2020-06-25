@@ -11,10 +11,16 @@ const alternator = (range, str1, str2) => {
   if (typeof range !== 'number') { throw new TypeError('range'); }
   if (typeof str1 !== 'string') { throw new TypeError('str1'); }
   if (typeof str2 !== 'string') { throw new TypeError('str2'); }
-
-  for (_; _; _) {
-
+  let i;
+  let result=''
+  for (i=0;i!==range;i++) {
+    if (i % 2){
+      result+=str2;
+    } else{
+      result+=str1;
+    }
   }
+
 
   if (typeof result !== 'string') { throw new TypeError('result'); }
   return result;

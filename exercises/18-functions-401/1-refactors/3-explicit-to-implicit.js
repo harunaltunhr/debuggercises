@@ -7,12 +7,20 @@
  * @param {any} b
  * @returns {number}
  */
-const mystery = (a, b) => {
-  const result = Number(typeof a === typeof b)
-    && (a > b) ? Number(a) : Number(b);
-  return result;
-};
 
+const mystery = (a, b) => {
+  if(Number(typeof a === typeof b)){
+    if((a > b)){
+      result = Number(a);
+    } else{
+      result = Number(b);
+    }
+  }
+  else{
+    result = Number(b);
+  }
+  return result;
+}
 
 const _1_arg1 = 'string';
 const _1_arg2 = '14';

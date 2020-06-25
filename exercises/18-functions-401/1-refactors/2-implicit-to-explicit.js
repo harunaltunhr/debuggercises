@@ -10,7 +10,20 @@
 const mystery = (a, b) => typeof a !== b
   || !b
   && (Number.isNaN(b) || isNaN(a));
+const myster= (a,b) =>{
+  if (typeof a !== b || !b){
+    if(Number.isNaN(b)){
+      result = true;
+    }else if(isNaN(a)){
+      result = true;
+    }
+    else{
+      result = false;
+    }
 
+    return result ;
+}
+ }
 
 const _1_arg1 = 1;
 const _1_arg2 = 'number';

@@ -3,13 +3,7 @@
 // refactor this function ot use a ternary operator
 const conditional = (a, b) => {
   let result;
-  if (a && b) {
-    result = !a;
-  } else if (a || b) {
-    result = !b;
-  } else {
-    result = a === b;
-  }
+  result = (Boolean(a)&Boolean(b)) ? !Boolean(a) :(a||b) ? a : (a===b) ? true : false ; 
   return result;
 };
 
