@@ -3,10 +3,9 @@
 // write a function that behaves the same as !
 //  ... but doesn't use !
 function not(value) {
-const booleanValue= Boolean(value);
-const isTrue=True;
-const notValue= isTrue===booleanValue;
-return notValue ? true : false
+const notValue = (Boolean (value)===true) ? false : true;
+return notValue;
+
 }
 
 const _1_expect = true;
