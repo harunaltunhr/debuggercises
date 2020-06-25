@@ -1,6 +1,6 @@
 # Debuggercises 
 
-> 6/25/2020, 11:26:23 PM 
+> 6/25/2020, 11:44:33 PM 
 
 ## /exercises 
 
@@ -117,9 +117,9 @@
     - [/2.js](./09-block-scope/3-assign-values/README.md#2js) - _pass_ 
     - [/3.js](./09-block-scope/3-assign-values/README.md#3js) - _pass_ 
   - [/4-declare-and-assign](./09-block-scope/4-declare-and-assign/README.md)
-    - [/1.js](./09-block-scope/4-declare-and-assign/README.md#1js) - _incomplete_ 
-    - [/2.js](./09-block-scope/4-declare-and-assign/README.md#2js) - _incomplete_ 
-    - [/3.js](./09-block-scope/4-declare-and-assign/README.md#3js) - _incomplete_ 
+    - [/1.js](./09-block-scope/4-declare-and-assign/README.md#1js) - _error_ 
+    - [/2.js](./09-block-scope/4-declare-and-assign/README.md#2js) - _pass_ 
+    - [/3.js](./09-block-scope/4-declare-and-assign/README.md#3js) - _pass_ 
 - [/10-conditional-statements](./10-conditional-statements/README.md)
   - [/0-examples](./10-conditional-statements/0-examples/README.md)
     - [/1-if.js](./10-conditional-statements/0-examples/README.md#1-ifjs) - _pass_ 

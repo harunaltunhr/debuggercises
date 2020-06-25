@@ -1,6 +1,6 @@
 # Debuggercises 
 
-> 6/25/2020, 11:26:23 PM 
+> 6/25/2020, 11:44:33 PM 
 
 ## [exercises](../../README.md)/[19-implicit-coercion](../README.md)/1-write-tests-arithmetic 
 

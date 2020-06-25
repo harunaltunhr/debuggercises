@@ -1,6 +1,6 @@
 # Debuggercises 
 
-> 6/25/2020, 11:26:23 PM 
+> 6/25/2020, 11:44:33 PM 
 
 ## [exercises](../README.md)/09-block-scope 
 
@@ -16,6 +16,6 @@
   - [/2.js](./3-assign-values/README.md#2js) - _pass_ 
   - [/3.js](./3-assign-values/README.md#3js) - _pass_ 
 - [/4-declare-and-assign](./4-declare-and-assign/README.md)
-  - [/1.js](./4-declare-and-assign/README.md#1js) - _incomplete_ 
-  - [/2.js](./4-declare-and-assign/README.md#2js) - _incomplete_ 
-  - [/3.js](./4-declare-and-assign/README.md#3js) - _incomplete_ 
+  - [/1.js](./4-declare-and-assign/README.md#1js) - _error_ 
+  - [/2.js](./4-declare-and-assign/README.md#2js) - _pass_ 
+  - [/3.js](./4-declare-and-assign/README.md#3js) - _pass_ 
