@@ -5,7 +5,10 @@ let b = 'x';
 let temp = null;
 
 // write some code, be sure to use temp!
-
+temp = a ;
+a = b ;
+b = temp ;
+temp= null ;
 // fill in the _ to pass the assertions
 
 const isTrue1 = a === 'x';
