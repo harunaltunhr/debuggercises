@@ -1,15 +1,11 @@
 # Debuggercises 
 
-<<<<<<< HEAD
-> 6/25/2020, 11:44:33 PM 
-=======
-> 6/24/2020, 5:04:07 PM 
->>>>>>> e3cc23e1935bfbaab163c87e90dc56f2c2d553e9
+> 6/26/2020, 8:45:56 PM 
 
 ## [exercises](../../README.md)/[04-value-swaps](../README.md)/exercises 
 
-- [/1-double-swap.js](#1-double-swapjs) - _pass_ 
-- [/2-triple-swap.js](#2-triple-swapjs) - _pass_ 
+- [/1-double-swap.js](#1-double-swapjs) - _fail_ 
+- [/2-triple-swap.js](#2-triple-swapjs) - _fail_ 
 - [/3-triple-swap.js](#3-triple-swapjs) - _incomplete_ 
 - [/4-quadruple-swap.js](#4-quadruple-swapjs) - _incomplete_ 
 - [/5-quadruple-swap.js](#5-quadruple-swapjs) - _incomplete_ 
@@ -19,13 +15,13 @@
 
 ## /1-double-swap.js 
 
-> pass 
+> fail 
 >
 > [review source](../../../exercises/04-value-swaps/exercises/1-double-swap.js)
 
 ```txt
-+ PASS: Test 1
-+ PASS: Test 2
+- FAIL: Test 1
+- FAIL: Test 2
 + PASS: Test 3
 ```
 
@@ -36,15 +32,7 @@ let a = 'y';
 let b = 'x';
 let temp = null;
 
-<<<<<<< HEAD
-// write some code!
-a=b;
-b=b+a;
-=======
 // write some code, be sure to use temp!
-
-
->>>>>>> e3cc23e1935bfbaab163c87e90dc56f2c2d553e9
 
 // fill in the _ to pass the assertions
 
@@ -66,14 +54,14 @@ console.assert(isTrue3, 'Test 3');
 
 ## /2-triple-swap.js 
 
-> pass 
+> fail 
 >
 > [review source](../../../exercises/04-value-swaps/exercises/2-triple-swap.js)
 
 ```txt
-+ PASS: Test 1
-+ PASS: Test 2
-+ PASS: Test 3
+- FAIL: Test 1
+- FAIL: Test 2
+- FAIL: Test 3
 + PASS: Test 4
 ```
 
@@ -85,15 +73,7 @@ let b = 'x';
 let c = 'y';
 let temp = null;
 
-<<<<<<< HEAD
-// write some code!
-a=b;
-b=c;
-c=c+a;
-=======
 // write some code, be sure to use temp!
-
->>>>>>> e3cc23e1935bfbaab163c87e90dc56f2c2d553e9
 
 
 // fill in the _ to pass the assertions
@@ -124,11 +104,11 @@ console.assert(isTrue4, 'Test 4');
 > [review source](../../../exercises/04-value-swaps/exercises/3-triple-swap.js)
 
 ```txt
-+ PASS: Test 1
-+ PASS: Test 2
-+ PASS: Test 3
+- FAIL: Test 1
+- FAIL: Test 2
+- FAIL: Test 3
 UNCAUGHT: ReferenceError: _ is not defined
-    at Object.<anonymous> (  ...  /exercises/04-value-swaps/exercises/3-triple-swap.js:26:26)
+    at Object.<anonymous> (  ...  /exercises/04-value-swaps/exercises/3-triple-swap.js:22:26)
     at Module._compile (internal/modules/cjs/loader.js:1200:30)
     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
     at Module.load (internal/modules/cjs/loader.js:1049:32)
@@ -148,16 +128,7 @@ let b = 'z';
 let c = 'x';
 let temp = null;
 
-<<<<<<< HEAD
-// write some code!
-temp=b;
-b=a;
-a=c;
-c=temp;
-=======
 // write some code, be sure to use temp!
-
->>>>>>> e3cc23e1935bfbaab163c87e90dc56f2c2d553e9
 
 
 // fill in the _ to pass the assertions
@@ -188,12 +159,12 @@ console.assert(isTrue4, 'Test 4');
 > [review source](../../../exercises/04-value-swaps/exercises/4-quadruple-swap.js)
 
 ```txt
-+ PASS: Test 1
-+ PASS: Test 2
-+ PASS: Test 3
-+ PASS: Test 4
+- FAIL: Test 1
+- FAIL: Test 2
+- FAIL: Test 3
+- FAIL: Test 4
 UNCAUGHT: ReferenceError: _ is not defined
-    at Object.<anonymous> (  ...  /exercises/04-value-swaps/exercises/4-quadruple-swap.js:33:26)
+    at Object.<anonymous> (  ...  /exercises/04-value-swaps/exercises/4-quadruple-swap.js:27:26)
     at Module._compile (internal/modules/cjs/loader.js:1200:30)
     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
     at Module.load (internal/modules/cjs/loader.js:1049:32)
@@ -214,18 +185,7 @@ let c = 'w';
 let d = 'x';
 let temp = null;
 
-<<<<<<< HEAD
-// write some code!
-temp=a;
-a=c;
-c=temp;
-temp=b;
-b=d;
-d=temp;
-=======
 // write some code, be sure to use temp!
-
->>>>>>> e3cc23e1935bfbaab163c87e90dc56f2c2d553e9
 
 
 
@@ -260,12 +220,12 @@ console.assert(isTrue5, 'Test 5');
 > [review source](../../../exercises/04-value-swaps/exercises/5-quadruple-swap.js)
 
 ```txt
-+ PASS: Test 1
-+ PASS: Test 2
-+ PASS: Test 3
-+ PASS: Test 4
+- FAIL: Test 1
+- FAIL: Test 2
+- FAIL: Test 3
+- FAIL: Test 4
 UNCAUGHT: ReferenceError: _ is not defined
-    at Object.<anonymous> (  ...  /exercises/04-value-swaps/exercises/5-quadruple-swap.js:32:26)
+    at Object.<anonymous> (  ...  /exercises/04-value-swaps/exercises/5-quadruple-swap.js:27:26)
     at Module._compile (internal/modules/cjs/loader.js:1200:30)
     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
     at Module.load (internal/modules/cjs/loader.js:1049:32)
@@ -286,17 +246,7 @@ let c = 'z';
 let d = 'x';
 let temp = null;
 
-<<<<<<< HEAD
-// write some code
-temp=b;
-b=d;
-d=c;
-c=a;
-a=temp;
-=======
 // write some code, be sure to use temp!
-
->>>>>>> e3cc23e1935bfbaab163c87e90dc56f2c2d553e9
 
 
 
@@ -331,10 +281,10 @@ console.assert(isTrue5, 'Test 5');
 > [review source](../../../exercises/04-value-swaps/exercises/6-let-and-const.js)
 
 ```txt
-+ PASS: Test 1
-+ PASS: Test 2
+- FAIL: Test 1
+- FAIL: Test 2
 UNCAUGHT: ReferenceError: _ is not defined
-    at Object.<anonymous> (  ...  /exercises/04-value-swaps/exercises/6-let-and-const.js:27:23)
+    at Object.<anonymous> (  ...  /exercises/04-value-swaps/exercises/6-let-and-const.js:25:23)
     at Module._compile (internal/modules/cjs/loader.js:1200:30)
     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
     at Module.load (internal/modules/cjs/loader.js:1049:32)
@@ -360,15 +310,7 @@ let temp = null;
 temp = a;
 const c = temp;
 
-<<<<<<< HEAD
-// write your code below here, and above the assertions
-a=b;
-b=c;
-=======
 // write some code, be sure to use temp!
-
-
->>>>>>> e3cc23e1935bfbaab163c87e90dc56f2c2d553e9
 
 
 // replace the _ with a value to pass the assertions
@@ -399,9 +341,9 @@ console.assert(isTrue4, "Test 4");
 > [review source](../../../exercises/04-value-swaps/exercises/7-let-and-const.js)
 
 ```txt
-+ PASS: Test 1
-+ PASS: Test 2
-+ PASS: Test 3
+- FAIL: Test 1
+- FAIL: Test 2
+- FAIL: Test 3
 UNCAUGHT: ReferenceError: _ is not defined
     at Object.<anonymous> (  ...  /exercises/04-value-swaps/exercises/7-let-and-const.js:32:23)
     at Module._compile (internal/modules/cjs/loader.js:1200:30)
@@ -430,17 +372,10 @@ let temp = null;
 temp = a;
 a = b;
 const d = a;
-<<<<<<< HEAD
-// write your code below here
-a=c;
-b=temp;
-c=d;
-=======
 
 // write some code, be sure to use temp!
 
 
->>>>>>> e3cc23e1935bfbaab163c87e90dc56f2c2d553e9
 
 
 // fill in in the _'s to pass the final assertions

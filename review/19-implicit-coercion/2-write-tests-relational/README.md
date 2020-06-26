@@ -1,10 +1,6 @@
 # Debuggercises 
 
-<<<<<<< HEAD:review/19-implicit-coercion/1-write-tests-relational/README.md
-> 6/25/2020, 11:44:33 PM 
-=======
-> 6/24/2020, 5:04:07 PM 
->>>>>>> e3cc23e1935bfbaab163c87e90dc56f2c2d553e9:review/19-implicit-coercion/2-write-tests-relational/README.md
+> 6/26/2020, 8:45:56 PM 
 
 ## [exercises](../../README.md)/[19-implicit-coercion](../README.md)/2-write-tests-relational 
 
