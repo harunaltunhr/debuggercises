@@ -8,8 +8,8 @@ let temp = null;
 
 // write some code
 temp=b;
-b=d;
 d=c;
+b=d;
 c=a;
 a=temp;
 
