@@ -1,6 +1,6 @@
 # Debuggercises 
 
-> 6/26/2020, 8:45:56 PM 
+> 6/26/2020, 8:51:50 PM 
 
 ## [exercises](../README.md)/07-logical-operators 
 
