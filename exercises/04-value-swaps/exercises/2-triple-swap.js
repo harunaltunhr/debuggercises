@@ -6,7 +6,11 @@ let c = 'y';
 let temp = null;
 
 // write some code, be sure to use temp!
-
+temp = a ;
+a = b ;
+b = c ;
+c = temp ;
+temp = null ;
 
 // fill in the _ to pass the assertions
 
