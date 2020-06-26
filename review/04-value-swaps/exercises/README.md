@@ -1,10 +1,10 @@
 # Debuggercises 
 
-> 6/26/2020, 8:45:56 PM 
+> 6/26/2020, 8:51:50 PM 
 
 ## [exercises](../../README.md)/[04-value-swaps](../README.md)/exercises 
 
-- [/1-double-swap.js](#1-double-swapjs) - _fail_ 
+- [/1-double-swap.js](#1-double-swapjs) - _pass_ 
 - [/2-triple-swap.js](#2-triple-swapjs) - _fail_ 
 - [/3-triple-swap.js](#3-triple-swapjs) - _incomplete_ 
 - [/4-quadruple-swap.js](#4-quadruple-swapjs) - _incomplete_ 
@@ -15,13 +15,13 @@
 
 ## /1-double-swap.js 
 
-> fail 
+> pass 
 >
 > [review source](../../../exercises/04-value-swaps/exercises/1-double-swap.js)
 
 ```txt
-- FAIL: Test 1
-- FAIL: Test 2
++ PASS: Test 1
++ PASS: Test 2
 + PASS: Test 3
 ```
 
@@ -33,7 +33,10 @@ let b = 'x';
 let temp = null;
 
 // write some code, be sure to use temp!
-
+temp = a ;
+a = b ;
+b = temp ;
+temp= null ;
 // fill in the _ to pass the assertions
 
 const isTrue1 = a === 'x';
