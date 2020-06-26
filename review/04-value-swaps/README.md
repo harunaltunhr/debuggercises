@@ -1,18 +1,14 @@
 # Debuggercises 
 
-<<<<<<< HEAD
-> 6/25/2020, 11:44:33 PM 
-=======
-> 6/24/2020, 5:04:07 PM 
->>>>>>> e3cc23e1935bfbaab163c87e90dc56f2c2d553e9
+> 6/26/2020, 8:45:56 PM 
 
 ## [exercises](../README.md)/04-value-swaps 
 
 - [/example](./example/README.md)
   - [/double-swap.js](./example/README.md#double-swapjs) - _pass_ 
 - [/exercises](./exercises/README.md)
-  - [/1-double-swap.js](./exercises/README.md#1-double-swapjs) - _pass_ 
-  - [/2-triple-swap.js](./exercises/README.md#2-triple-swapjs) - _pass_ 
+  - [/1-double-swap.js](./exercises/README.md#1-double-swapjs) - _fail_ 
+  - [/2-triple-swap.js](./exercises/README.md#2-triple-swapjs) - _fail_ 
   - [/3-triple-swap.js](./exercises/README.md#3-triple-swapjs) - _incomplete_ 
   - [/4-quadruple-swap.js](./exercises/README.md#4-quadruple-swapjs) - _incomplete_ 
   - [/5-quadruple-swap.js](./exercises/README.md#5-quadruple-swapjs) - _incomplete_ 

@@ -1,10 +1,6 @@
 # Debuggercises 
 
-<<<<<<< HEAD
-> 6/25/2020, 11:44:33 PM 
-=======
-> 6/24/2020, 5:04:07 PM 
->>>>>>> e3cc23e1935bfbaab163c87e90dc56f2c2d553e9
+> 6/26/2020, 8:45:56 PM 
 
 ## /exercises 
 
@@ -50,8 +46,8 @@
   - [/example](./04-value-swaps/example/README.md)
     - [/double-swap.js](./04-value-swaps/example/README.md#double-swapjs) - _pass_ 
   - [/exercises](./04-value-swaps/exercises/README.md)
-    - [/1-double-swap.js](./04-value-swaps/exercises/README.md#1-double-swapjs) - _pass_ 
-    - [/2-triple-swap.js](./04-value-swaps/exercises/README.md#2-triple-swapjs) - _pass_ 
+    - [/1-double-swap.js](./04-value-swaps/exercises/README.md#1-double-swapjs) - _fail_ 
+    - [/2-triple-swap.js](./04-value-swaps/exercises/README.md#2-triple-swapjs) - _fail_ 
     - [/3-triple-swap.js](./04-value-swaps/exercises/README.md#3-triple-swapjs) - _incomplete_ 
     - [/4-quadruple-swap.js](./04-value-swaps/exercises/README.md#4-quadruple-swapjs) - _incomplete_ 
     - [/5-quadruple-swap.js](./04-value-swaps/exercises/README.md#5-quadruple-swapjs) - _incomplete_ 
@@ -103,8 +99,8 @@
     - [/or.js](./07-logical-operators/exercises/README.md#orjs) - _pass_ 
 - [/08-functions-201](./08-functions-201/README.md)
   - [/0-example.js](./08-functions-201/README.md#0-examplejs) - _pass_ 
-  - [/1-exercise.js](./08-functions-201/README.md#1-exercisejs) - _pass_ 
-  - [/2-exercise.js](./08-functions-201/README.md#2-exercisejs) - _pass_ 
+  - [/1-exercise.js](./08-functions-201/README.md#1-exercisejs) - _incomplete_ 
+  - [/2-exercise.js](./08-functions-201/README.md#2-exercisejs) - _incomplete_ 
 - [/09-block-scope](./09-block-scope/README.md)
   - [/1-missing-values](./09-block-scope/1-missing-values/README.md)
     - [/1.js](./09-block-scope/1-missing-values/README.md#1js) - _pass_ 

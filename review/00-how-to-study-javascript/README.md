@@ -1,6 +1,6 @@
 # Debuggercises 
 
-> 6/24/2020, 5:04:07 PM 
+> 6/26/2020, 8:45:56 PM 
 
 ## [exercises](../README.md)/00-how-to-study-javascript 
 

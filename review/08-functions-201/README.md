@@ -1,16 +1,12 @@
 # Debuggercises 
 
-<<<<<<< HEAD
-> 6/25/2020, 11:44:33 PM 
-=======
-> 6/24/2020, 5:04:07 PM 
->>>>>>> e3cc23e1935bfbaab163c87e90dc56f2c2d553e9
+> 6/26/2020, 8:45:56 PM 
 
 ## [exercises](../README.md)/08-functions-201 
 
 - [/0-example.js](#0-examplejs) - _pass_ 
-- [/1-exercise.js](#1-exercisejs) - _pass_ 
-- [/2-exercise.js](#2-exercisejs) - _pass_ 
+- [/1-exercise.js](#1-exercisejs) - _incomplete_ 
+- [/2-exercise.js](#2-exercisejs) - _incomplete_ 
 ---
 
 ## /0-example.js 
@@ -96,21 +92,11 @@ console.assert(_3_actualLoop === _3_expect, 'Test 3 Loop');
 
 ## /1-exercise.js 
 
-> pass 
+> incomplete 
 >
 > [review source](../../exercises/08-functions-201/1-exercise.js)
 
 ```txt
-<<<<<<< HEAD
-+ PASS: Test 1 A
-+ PASS: Test 1 B
-+ PASS: Test 2 A
-+ PASS: Test 2 B
-+ PASS: Test 3 A
-+ PASS: Test 3 B
-+ PASS: Test 4 A
-+ PASS: Test 4 B
-=======
 UNCAUGHT: ReferenceError: _ is not defined
     at withAnd (  ...  /exercises/08-functions-201/1-exercise.js:12:3)
     at Object.<anonymous> (  ...  /exercises/08-functions-201/1-exercise.js:39:20)
@@ -122,7 +108,6 @@ UNCAUGHT: ReferenceError: _ is not defined
     at require (internal/modules/cjs/helpers.js:73:18)
     at evaluate (  ...  /scripts/lib/evaluate.js:28:7)
     at Object.<anonymous> (  ...  /scripts/review.js:119:1) 
->>>>>>> e3cc23e1935bfbaab163c87e90dc56f2c2d553e9
 ```
 
 ```js
@@ -136,15 +121,6 @@ UNCAUGHT: ReferenceError: _ is not defined
   https://www.cross-browser.com/talk/demorgan.html
 */
 
-<<<<<<< HEAD
-const notAndA = (x, y) => {
-  return !(x||y);
-};
-
-
-const notAndB = (x, y) => {
-  return !(x||y);
-=======
 const withAnd = (x, y) => {
   return _;
 };
@@ -152,7 +128,6 @@ const withAnd = (x, y) => {
 
 const withOr = (x, y) => {
   return _;
->>>>>>> e3cc23e1935bfbaab163c87e90dc56f2c2d553e9
 };
 
 
@@ -208,21 +183,11 @@ console.assert(_4_actualB === _4_expect, 'Test 4 B');
 
 ## /2-exercise.js 
 
-> pass 
+> incomplete 
 >
 > [review source](../../exercises/08-functions-201/2-exercise.js)
 
 ```txt
-<<<<<<< HEAD
-+ PASS: Test 1 A
-+ PASS: Test 1 B
-+ PASS: Test 2 A
-+ PASS: Test 2 B
-+ PASS: Test 3 A
-+ PASS: Test 3 B
-+ PASS: Test 4 A
-+ PASS: Test 4 B
-=======
 UNCAUGHT: ReferenceError: _ is not defined
     at withAnd (  ...  /exercises/08-functions-201/2-exercise.js:12:3)
     at Object.<anonymous> (  ...  /exercises/08-functions-201/2-exercise.js:38:20)
@@ -234,7 +199,6 @@ UNCAUGHT: ReferenceError: _ is not defined
     at require (internal/modules/cjs/helpers.js:73:18)
     at evaluate (  ...  /scripts/lib/evaluate.js:28:7)
     at Object.<anonymous> (  ...  /scripts/review.js:119:1) 
->>>>>>> e3cc23e1935bfbaab163c87e90dc56f2c2d553e9
 ```
 
 ```js
@@ -248,21 +212,12 @@ UNCAUGHT: ReferenceError: _ is not defined
   https://www.cross-browser.com/talk/demorgan.html
 */
 
-<<<<<<< HEAD
-const notAndA = (x, y) => {
-  return !(x&&y);
-};
-
-const notAndB = (x, y) => {
-  return !(x&&y);
-=======
 const withAnd = (x, y) => {
   return _;
 };
 
 const withOr = (x, y) => {
   return _;
->>>>>>> e3cc23e1935bfbaab163c87e90dc56f2c2d553e9
 };
 
 
