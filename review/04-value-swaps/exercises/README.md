@@ -28,8 +28,8 @@
 ```js
 'use strict';
 
-let a = 2;
-let b = 1;
+let a = 'y';
+let b = 'x';
 let temp = null;
 
 // write some code!
@@ -38,10 +38,10 @@ b=b+a;
 
 // fill in the _ to pass the assertions
 
-const isTrue1 = a === 1;
+const isTrue1 = a === 'x';
 console.assert(isTrue1, 'Test 1');
 
-const isTrue2 = b === 2;
+const isTrue2 = b === 'y';
 console.assert(isTrue2, 'Test 2');
 
 const isTrue3 = temp === null;
@@ -70,9 +70,9 @@ console.assert(isTrue3, 'Test 3');
 ```js
 'use strict';
 
-let a = 3;
-let b = 1;
-let c = 2;
+let a = 'z';
+let b = 'x';
+let c = 'y';
 let temp = null;
 
 // write some code!
@@ -83,13 +83,13 @@ c=c+a;
 
 // fill in the _ to pass the assertions
 
-const isTrue1 = a === 1;
+const isTrue1 = a === 'x';
 console.assert(isTrue1, 'Test 1');
 
-const isTrue2 = b === 2;
+const isTrue2 = b === 'y';
 console.assert(isTrue2, 'Test 2');
 
-const isTrue3 = c === 3;
+const isTrue3 = c === 'z';
 console.assert(isTrue3, 'Test 3');
 
 const isTrue4 = temp === null;
@@ -128,9 +128,9 @@ UNCAUGHT: ReferenceError: _ is not defined
 ```js
 'use strict';
 
-let a = 2;
-let b = 3;
-let c = 1;
+let a = 'y';
+let b = 'z';
+let c = 'x';
 let temp = null;
 
 // write some code!
@@ -142,13 +142,13 @@ c=temp;
 
 // fill in the _ to pass the assertions
 
-const isTrue1 = a === 1;
+const isTrue1 = a === 'x';
 console.assert(isTrue1, 'Test 1');
 
-const isTrue2 = b === 2;
+const isTrue2 = b === 'y';
 console.assert(isTrue2, 'Test 2');
 
-const isTrue3 = c === 3;
+const isTrue3 = c === 'z';
 console.assert(isTrue3, 'Test 3');
 
 const isTrue4 = temp === _;
@@ -188,10 +188,10 @@ UNCAUGHT: ReferenceError: _ is not defined
 ```js
 'use strict';
 
-let a = 3;
-let b = 4;
-let c = 1;
-let d = 2;
+let a = 'y';
+let b = 'z';
+let c = 'w';
+let d = 'x';
 let temp = null;
 
 // write some code!
@@ -206,16 +206,16 @@ d=temp;
 
 // fill in the _ to pass the final assertions
 
-const isTrue1 = a === 1;
+const isTrue1 = a === 'w';
 console.assert(isTrue1, 'Test 1');
 
-const isTrue2 = b === 2;
+const isTrue2 = b === 'x';
 console.assert(isTrue2, 'Test 2');
 
-const isTrue3 = c === 3;
+const isTrue3 = c === 'y';
 console.assert(isTrue3, 'Test 3');
 
-const isTrue4 = d === 4;
+const isTrue4 = d === 'z';
 console.assert(isTrue4, 'Test 4');
 
 const isTrue5 = temp === _;
@@ -255,10 +255,10 @@ UNCAUGHT: ReferenceError: _ is not defined
 ```js
 'use strict';
 
-let a = 3;
-let b = 1;
-let c = 4;
-let d = 2;
+let a = 'y';
+let b = 'w';
+let c = 'z';
+let d = 'x';
 let temp = null;
 
 // write some code
@@ -272,16 +272,16 @@ a=temp;
 
 // fill in the final _ to pass the assertions
 
-const isTrue1 = a === 1;
+const isTrue1 = a === 'w';
 console.assert(isTrue1, 'Test 1');
 
-const isTrue2 = b === 2;
+const isTrue2 = b === 'x';
 console.assert(isTrue2, 'Test 2');
 
-const isTrue3 = c === 3;
+const isTrue3 = c === 'y';
 console.assert(isTrue3, 'Test 3');
 
-const isTrue4 = d === 4;
+const isTrue4 = d === 'z';
 console.assert(isTrue4, 'Test 4');
 
 const isTrue5 = temp === _;
@@ -323,8 +323,8 @@ UNCAUGHT: ReferenceError: _ is not defined
 // fill in the blanks for c and temp
 
 // leave this code as it is
-let a = 2;
-let b = 1;
+let a = 'y';
+let b = 'x';
 let temp = null;
 
 temp = a;
@@ -337,10 +337,10 @@ b=c;
 
 // replace the _ with a value to pass the assertions
 
-const isTrue1 = a === 1;
+const isTrue1 = a === 'x';
 console.assert(isTrue1, "Test 1");
 
-const isTrue2 = b === 2;
+const isTrue2 = b === 'y';
 console.assert(isTrue2, "Test 2");
 
 const isTrue3 = c === _;
@@ -386,9 +386,9 @@ UNCAUGHT: ReferenceError: _ is not defined
 // fill in the blanks for d and temp
 
 // leave this code as it is
-let a = 2;
-let b = 3;
-let c = 1;
+let a = 'y';
+let b = 'z';
+let c = 'x';
 let temp = null;
 
 temp = a;
@@ -399,16 +399,17 @@ a=c;
 b=temp;
 c=d;
 
+// write some code, be sure to use temp!
 
 // fill in in the _'s to pass the final assertions
 
-const isTrue1 = a === 1;
+const isTrue1 = a === 'x';
 console.assert(isTrue1, 'Test 1');
 
-const isTrue2 = b === 2;
+const isTrue2 = b === 'y';
 console.assert(isTrue2, 'Test 2');
 
-const isTrue3 = c === 3;
+const isTrue3 = c === 'z';
 console.assert(isTrue3, 'Test 3');
 
 const isTrue4 = d === _;

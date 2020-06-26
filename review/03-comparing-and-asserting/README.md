@@ -6,7 +6,7 @@
 
 - [/examples](./examples/README.md)
   - [/1-strict-equality.js](./examples/README.md#1-strict-equalityjs)  
-  - [/2-extra-assignment-vs-comparison.js](./examples/README.md#2-extra-assignment-vs-comparisonjs) - _error (syntax)_ 
+  - [/2-assignment-vs-comparison.js](./examples/README.md#2-assignment-vs-comparisonjs) - _error (syntax)_ 
   - [/3-console-assert.js](./examples/README.md#3-console-assertjs) - _fail_ 
   - [/4-testing-with-assert.js](./examples/README.md#4-testing-with-assertjs) - _pass_ 
   - [/object-is.js](./examples/README.md#object-isjs)  

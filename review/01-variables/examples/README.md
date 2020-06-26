@@ -1,6 +1,6 @@
 # Debuggercises 
 
-> 6/25/2020, 11:26:23 PM 
+> 6/24/2020, 5:04:07 PM 
 
 ## [exercises](../../README.md)/[01-variables](../README.md)/examples 
 
