@@ -1,6 +1,10 @@
 # Debuggercises 
 
+<<<<<<< HEAD
 > 6/25/2020, 11:44:33 PM 
+=======
+> 6/24/2020, 5:04:07 PM 
+>>>>>>> e3cc23e1935bfbaab163c87e90dc56f2c2d553e9
 
 ## [exercises](../../README.md)/[11-refactoring-conditionals](../README.md)/0-examples 
 

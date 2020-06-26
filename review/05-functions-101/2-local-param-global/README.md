@@ -1,6 +1,10 @@
 # Debuggercises 
 
+<<<<<<< HEAD
 > 6/25/2020, 11:44:33 PM 
+=======
+> 6/24/2020, 5:04:07 PM 
+>>>>>>> e3cc23e1935bfbaab163c87e90dc56f2c2d553e9
 
 ## [exercises](../../README.md)/[05-functions-101](../README.md)/2-local-param-global 
 
@@ -8,10 +12,10 @@
 - [/1-parameter-local.js](#1-parameter-localjs) - _incomplete_ 
 - [/2-parameter-global.js](#2-parameter-globaljs) - _incomplete_ 
 - [/3-parameter-global.js](#3-parameter-globaljs) - _incomplete_ 
+- [/4-local-global.js](#4-local-globaljs) - _incomplete_ 
 - [/5-local-global.js](#5-local-globaljs) - _incomplete_ 
-- [/6-local-global.js](#6-local-globaljs) - _incomplete_ 
-- [/7-parameter-local-global.js](#7-parameter-local-globaljs) - _incomplete_ 
-- [/8-prameter-local-global.js](#8-prameter-local-globaljs) - _incomplete_ 
+- [/6-parameter-local-global.js](#6-parameter-local-globaljs) - _incomplete_ 
+- [/7-prameter-local-global.js](#7-prameter-local-globaljs) - _incomplete_ 
 - [/extra-pure-functions.js](#extra-pure-functionsjs)  
 ---
 
@@ -32,19 +36,19 @@ LOG: fromLocals1:  town, ship
 LOG: fromLocals2:  town, ship
 LOG: 
 -- Global Variables ---
-LOG: fromGlobals1:  [object global]-, -
-LOG: global1:  [object global]-
+LOG: fromGlobals1:  a-, -
+LOG: global1:  a-
 LOG: global2:  -  
 
 LOG: global1:  |
-LOG: global2:  [object global]|  
+LOG: global2:  -|  
 
-LOG: fromGlobals2:  [object global]-, -
-LOG: global1:  [object global]-
+LOG: fromGlobals2:  |-, -
+LOG: global1:  |-
 LOG: global2:  -  
 
-LOG: global1:  [object global]|
-LOG: global2:  [object global]|
+LOG: global1:  |-|
+LOG: global2:  -|
 ```
 
 ```js
@@ -101,7 +105,7 @@ console.log('\n-- Global Variables ---');
 //  the variables get their value from local and global assignments (confusing!)
 
 const usesGlobals = () => {
-  global1 = `${global}-`;
+  global1 = `${global1}-`;
   global2 = '-'
   return `${global1}, ${global2}`;
 };
@@ -115,7 +119,7 @@ console.log('global1:', global1);
 console.log('global2:', global2, '\n');
 
 global1 = '|';
-global2 = `${global}|`;
+global2 = `${global2}|`;
 
 console.log('global1:', global1);
 console.log('global2:', global2, '\n');
@@ -126,8 +130,8 @@ console.log('global1:', global1);
 console.log('global2:', global2, '\n');
 
 
-global1 = `${global}|`;
-global2 = `${global}|`;
+global1 = `${global1}|`;
+global2 = `${global2}|`;
 
 console.log('global1:', global1);
 console.log('global2:', global2);
@@ -317,15 +321,15 @@ console.assert(jazz3, 'Test 3: jazz');
 
 ---
 
-## /5-local-global.js 
+## /4-local-global.js 
 
 > incomplete 
 >
-> [review source](../../../exercises/05-functions-101/2-local-param-global/5-local-global.js)
+> [review source](../../../exercises/05-functions-101/2-local-param-global/4-local-global.js)
 
 ```txt
 UNCAUGHT: ReferenceError: _ is not defined
-    at Object.<anonymous> (  ...  /exercises/05-functions-101/2-local-param-global/5-local-global.js:12:35)
+    at Object.<anonymous> (  ...  /exercises/05-functions-101/2-local-param-global/4-local-global.js:12:35)
     at Module._compile (internal/modules/cjs/loader.js:1200:30)
     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
     at Module.load (internal/modules/cjs/loader.js:1049:32)
@@ -390,15 +394,15 @@ console.assert(globalTest6, 'Test 9: global');
 
 ---
 
-## /6-local-global.js 
+## /5-local-global.js 
 
 > incomplete 
 >
-> [review source](../../../exercises/05-functions-101/2-local-param-global/6-local-global.js)
+> [review source](../../../exercises/05-functions-101/2-local-param-global/5-local-global.js)
 
 ```txt
 UNCAUGHT: ReferenceError: _ is not defined
-    at Object.<anonymous> (  ...  /exercises/05-functions-101/2-local-param-global/6-local-global.js:12:35)
+    at Object.<anonymous> (  ...  /exercises/05-functions-101/2-local-param-global/5-local-global.js:12:35)
     at Module._compile (internal/modules/cjs/loader.js:1200:30)
     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
     at Module.load (internal/modules/cjs/loader.js:1049:32)
@@ -463,15 +467,15 @@ console.assert(globalTest6, 'Test 9: global');
 
 ---
 
-## /7-parameter-local-global.js 
+## /6-parameter-local-global.js 
 
 > incomplete 
 >
-> [review source](../../../exercises/05-functions-101/2-local-param-global/7-parameter-local-global.js)
+> [review source](../../../exercises/05-functions-101/2-local-param-global/6-parameter-local-global.js)
 
 ```txt
 UNCAUGHT: ReferenceError: _ is not defined
-    at Object.<anonymous> (  ...  /exercises/05-functions-101/2-local-param-global/7-parameter-local-global.js:11:32)
+    at Object.<anonymous> (  ...  /exercises/05-functions-101/2-local-param-global/6-parameter-local-global.js:11:32)
     at Module._compile (internal/modules/cjs/loader.js:1200:30)
     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
     at Module.load (internal/modules/cjs/loader.js:1049:32)
@@ -527,15 +531,15 @@ console.assert(globalTest5, 'Test 7: global');
 
 ---
 
-## /8-prameter-local-global.js 
+## /7-prameter-local-global.js 
 
 > incomplete 
 >
-> [review source](../../../exercises/05-functions-101/2-local-param-global/8-prameter-local-global.js)
+> [review source](../../../exercises/05-functions-101/2-local-param-global/7-prameter-local-global.js)
 
 ```txt
 UNCAUGHT: ReferenceError: _ is not defined
-    at Object.<anonymous> (  ...  /exercises/05-functions-101/2-local-param-global/8-prameter-local-global.js:11:32)
+    at Object.<anonymous> (  ...  /exercises/05-functions-101/2-local-param-global/7-prameter-local-global.js:11:32)
     at Module._compile (internal/modules/cjs/loader.js:1200:30)
     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
     at Module.load (internal/modules/cjs/loader.js:1049:32)

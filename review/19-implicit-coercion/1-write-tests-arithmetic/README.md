@@ -1,6 +1,10 @@
 # Debuggercises 
 
+<<<<<<< HEAD
 > 6/25/2020, 11:44:33 PM 
+=======
+> 6/24/2020, 5:04:07 PM 
+>>>>>>> e3cc23e1935bfbaab163c87e90dc56f2c2d553e9
 
 ## [exercises](../../README.md)/[19-implicit-coercion](../README.md)/1-write-tests-arithmetic 
 
@@ -234,20 +238,20 @@ const _2_expect = _;
 const _2_native = remainder(_2_a, _2_b);
 console.assert(Object.is(_2_expect, _2_native), 'Test 2');
 
-const _3_a = '5';
-const _3_b = _;
+const _3_a = _;
+const _3_b = '5';
 const _3_expect = 3;
 const _3_native = remainder(_3_a, _3_b);
 console.assert(Object.is(_3_expect, _3_native), 'Test 3');
 
-const _4_a = '5'; // find a different value than above
-const _4_b = _;
+const _4_a = _; // find a different value than above
+const _4_b = '5';
 const _4_expect = 3;
 const _4_native = remainder(_4_a, _4_b);
 console.assert(Object.is(_4_expect, _4_native), 'Test 4');
 
-const _5_a = '5'; // find a different value than above
-const _5_b = _;
+const _5_a = _; // find a different value than above
+const _5_b = '5';
 const _5_expect = 3;
 const _5_native = remainder(_5_a, _5_b);
 console.assert(Object.is(_5_expect, _5_native), 'Test 5');

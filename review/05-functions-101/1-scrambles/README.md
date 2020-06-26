@@ -1,6 +1,10 @@
 # Debuggercises 
 
+<<<<<<< HEAD
 > 6/25/2020, 11:44:33 PM 
+=======
+> 6/24/2020, 5:04:07 PM 
+>>>>>>> e3cc23e1935bfbaab163c87e90dc56f2c2d553e9
 
 ## [exercises](../../README.md)/[05-functions-101](../README.md)/1-scrambles 
 
@@ -171,8 +175,13 @@ const _2_expect = "zxy";
 const _2_actual = scramble('x', 'y', 'z');
 console.assert(_2_actual === _2_expect, 'Test 2');
 
+<<<<<<< HEAD
 const _3_expect = "zxy";
 const _3_actual = scramble('x', 'y', 'z');
+=======
+const _3_expect = "yzx";
+const _3_actual = scramble('z', 'x', 'y');
+>>>>>>> e3cc23e1935bfbaab163c87e90dc56f2c2d553e9
 console.assert(_3_actual === _3_expect, 'Test 3');
 
 

@@ -1,6 +1,10 @@
 # Debuggercises 
 
+<<<<<<< HEAD
 > 6/25/2020, 11:44:33 PM 
+=======
+> 6/24/2020, 5:04:07 PM 
+>>>>>>> e3cc23e1935bfbaab163c87e90dc56f2c2d553e9
 
 ## [exercises](../../README.md)/[15-while](../README.md)/examples 
 
@@ -92,37 +96,7 @@ LOG: C.  17
 LOG: C.  18
 LOG: C.  19
 LOG: C.  20
-LOG: C.  21
-LOG: C.  22
-LOG: C.  23
-LOG: C.  24
-LOG: C.  25
-LOG: C.  26
-LOG: C.  27
-LOG: C.  28
-LOG: C.  29
-LOG: C.  30
-LOG: C.  31
-LOG: C.  32
-LOG: C.  33
-LOG: C.  34
-LOG: C.  35
-LOG: C.  36
-LOG: C.  37
-LOG: C.  38
-LOG: C.  39
-LOG: C.  40
-LOG: C.  41
-LOG: C.  42
-LOG: C.  43
-LOG: C.  44
-LOG: C.  45
-LOG: C.  46
-LOG: C.  47
-LOG: C.  48
-LOG: C.  49
-LOG: C.  50
-UNCAUGHT: Error: Loop exceeded 50 iterations
+UNCAUGHT: Error: Loop exceeded 20 iterations
     at Object.<anonymous> (  ...  /exercises/15-while/examples/2-while-infinite.js:22:51)
     at Module._compile (internal/modules/cjs/loader.js:1200:30)
     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
@@ -170,13 +144,13 @@ while (-1 < c) {
 
   however, this repository has some protections against infinite loops
   - when studying in the browser using localhost:3000, the loop exercises have an extra button
-    "maxIterations: X" - click this button to see a simple way to avoid infinite loops
+    "loopGuard: X" - click this button to see a simple way to avoid infinite loops
     the LiveStudy app uses regular expressions to inject guards into your loops
     if the loop exceeds the allowed iterations it will throw an error: "Loop exceeded X iterations"
     this is a custom error, it's not part of JavaScript so googling it won't help to understand it
   - when `npm run review` is executed, the script will use the same technique to try preventing infinite loops
     the only difference is that it will inject it all on one line like this:
-      let loop1 = 0; while (true) { if (maxIterations < ++loop1) { throw new Error('Loop exceeded X iterations); }
+      let loop1 = 0; while (true) { if (loopGuard < ++loop1) { throw new Error('Loop exceeded X iterations); }
     when you read the callstacks in your review files, the line numbers should be correct
     but the character numbers will be too high.  now you know why :)
 
