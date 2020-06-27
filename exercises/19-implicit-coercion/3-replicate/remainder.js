@@ -8,12 +8,10 @@
  */
 function remainder(a, b) {
 let result;
-    if(Number (a) % Number (b)){
-    result = Number(a);
-    }else if (Number(b)== 0){
-    result = NaN;
+    if(Number (a)/Number (b)){
+    result = 0;
     }else{
-        result = 0;
+    result = 1;
     }
     return result;
 };

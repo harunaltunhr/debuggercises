@@ -43,7 +43,7 @@ console.assert(Object.is(_6_expect, _6_native), 'Test 6');
 
 const _7_a = 'aa';
 const _7_b = NaN;
-const _7_expect = 18;
+const _7_expect = NaN;
 const _7_native = multiply(_7_a, _7_b);
 console.assert(Object.is(_7_expect, _7_native), 'Test 7');
 

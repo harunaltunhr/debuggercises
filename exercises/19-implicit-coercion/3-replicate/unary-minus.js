@@ -5,8 +5,16 @@
  * @param {any} a
  * @returns {number}
  */
+let result;
 function unaryMinus(a) {
-
+    if(typeof(a)==='number'||'string'){
+    result = -1 ;
+}   else if(typeof(a)==='boolean'){
+    result = -Number(a);
+}else{
+    result = NaN;
+}
+    return result;
 };
 
 const _1_a = 1;
