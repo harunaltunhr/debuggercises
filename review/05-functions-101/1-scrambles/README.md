@@ -1,17 +1,17 @@
 # Debuggercises 
 
-> 6/26/2020, 9:21:50 PM 
+> 6/27/2020, 9:28:44 AM 
 
 ## [exercises](../../README.md)/[05-functions-101](../README.md)/1-scrambles 
 
-- [/1-write-expected.js](#1-write-expectedjs) - _error_ 
+- [/1-write-expected.js](#1-write-expectedjs) - _pass_ 
 - [/2-write-arguments.js](#2-write-argumentsjs) - _pass_ 
 - [/3-write-function.js](#3-write-functionjs) - _pass_ 
 ---
 
 ## /1-write-expected.js 
 
-> error 
+> pass 
 >
 > [review source](../../../exercises/05-functions-101/1-scrambles/1-write-expected.js)
 
@@ -21,17 +21,7 @@
 + PASS: Test 3
 + PASS: Test 4
 + PASS: Test 5
-UNCAUGHT: ReferenceError: __6expect is not defined
-    at Object.<anonymous> (  ...  /exercises/05-functions-101/1-scrambles/1-write-expected.js:29:30)
-    at Module._compile (internal/modules/cjs/loader.js:1200:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
-    at Module.load (internal/modules/cjs/loader.js:1049:32)
-    at Function.Module._load (internal/modules/cjs/loader.js:937:14)
-    at Module.require (internal/modules/cjs/loader.js:1089:19)
-    at require (internal/modules/cjs/helpers.js:73:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:28:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:119:1)
-    at Module._compile (internal/modules/cjs/loader.js:1200:30) 
++ PASS: Test 6
 ```
 
 ```js
@@ -63,7 +53,7 @@ console.assert(_5_actual === _5_expect, 'Test 5');
 
 const _6_expect = 'bca';
 const _6_actual = scramble('c', 'a', 'b');
-console.assert(_6_actual === __6expect, 'Test 6');
+console.assert(_6_actual === _6_expect, 'Test 6');
 
 
 ```
