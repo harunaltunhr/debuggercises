@@ -1,12 +1,12 @@
 # Debuggercises 
 
-> 6/27/2020, 9:28:44 AM 
+> 6/27/2020, 12:08:28 PM 
 
 ## [exercises](../../README.md)/[06-explicit-coercion](../README.md)/exercises 
 
 - [/1-write-expected.js](#1-write-expectedjs) - _pass_ 
 - [/2-write-arguments.js](#2-write-argumentsjs) - _pass_ 
-- [/3-write-function.js](#3-write-functionjs) - _fail_ 
+- [/3-write-function.js](#3-write-functionjs) - _pass_ 
 ---
 
 ## /1-write-expected.js 
@@ -159,20 +159,20 @@ console.assert(Object.is(_9_actual, _9_expect), 'Test 9');
 
 ## /3-write-function.js 
 
-> fail 
+> pass 
 >
 > [review source](../../../exercises/06-explicit-coercion/exercises/3-write-function.js)
 
 ```txt
-- FAIL: Test 1
-- FAIL: Test 2
-- FAIL: Test 3
-- FAIL: Test 4
-- FAIL: Test 5
-- FAIL: Test 6
-- FAIL: Test 7
-- FAIL: Test 8
-- FAIL: Test 9
++ PASS: Test 1
++ PASS: Test 2
++ PASS: Test 3
++ PASS: Test 4
++ PASS: Test 5
++ PASS: Test 6
++ PASS: Test 7
++ PASS: Test 8
++ PASS: Test 9
 ```
 
 ```js
@@ -184,7 +184,7 @@ console.assert(Object.is(_9_actual, _9_expect), 'Test 9');
    ===
 */
 const mystery = (x, y) => {
-
+return Number(x)=== Number(y);
 };
 
 // all of the test cases are correct

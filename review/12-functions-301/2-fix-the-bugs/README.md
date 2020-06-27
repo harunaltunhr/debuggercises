@@ -1,27 +1,27 @@
 # Debuggercises 
 
-> 6/27/2020, 9:28:44 AM 
+> 6/27/2020, 12:08:28 PM 
 
 ## [exercises](../../README.md)/[12-functions-301](../README.md)/2-fix-the-bugs 
 
-- [/1.js](#1js) - _fail_ 
-- [/2.js](#2js) - _error_ 
-- [/3.js](#3js) - _fail_ 
+- [/1.js](#1js) - _pass_ 
+- [/2.js](#2js) - _pass_ 
+- [/3.js](#3js) - _pass_ 
 ---
 
 ## /1.js 
 
-> fail 
+> pass 
 >
 > [review source](../../../exercises/12-functions-301/2-fix-the-bugs/1.js)
 
 ```txt
-- FAIL: Test 1
-- FAIL: Test 2
-- FAIL: Test 3
-- FAIL: Test 4
-- FAIL: Test 5
-- FAIL: Test 6
++ PASS: Test 1
++ PASS: Test 2
++ PASS: Test 3
++ PASS: Test 4
++ PASS: Test 5
++ PASS: Test 6
 ```
 
 ```js
@@ -37,15 +37,16 @@
  * @param {number} num2
  * @returns {string}
  */
+
 const areNotSameLength = (num1, num2) => {
   if (typeof num1 !== 'number') { throw new TypeError('num1'); }
   if (typeof num2 !== 'number') { throw new TypeError('num2'); }
-
-  const result = 'the same';
-  if (num1 = num2) {
-    result === `are {result}`;
+  let result = 'the same';
+ 
+  if (num1 == num2) {
+    result = `are ${result}`;
   } else {
-    result === "aren't ${result}";
+    result = `aren't ${result}`;
   }
 
   if (typeof result !== 'string') { throw new TypeError('result'); }
@@ -87,22 +88,17 @@ console.assert(_6_actual === _6_expect, 'Test 6');
 
 ## /2.js 
 
-> error 
+> pass 
 >
 > [review source](../../../exercises/12-functions-301/2-fix-the-bugs/2.js)
 
 ```txt
-UNCAUGHT: TypeError: Cannot create property 'Length' on string 'carboat'
-    at areNotSameLength (  ...  /exercises/12-functions-301/2-fix-the-bugs/2.js:18:19)
-    at Object.<anonymous> (  ...  /exercises/12-functions-301/2-fix-the-bugs/2.js:32:19)
-    at Module._compile (internal/modules/cjs/loader.js:1200:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
-    at Module.load (internal/modules/cjs/loader.js:1049:32)
-    at Function.Module._load (internal/modules/cjs/loader.js:937:14)
-    at Module.require (internal/modules/cjs/loader.js:1089:19)
-    at require (internal/modules/cjs/helpers.js:73:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:28:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:119:1) 
++ PASS: Test 1
++ PASS: Test 2
++ PASS: Test 3
++ PASS: Test 4
++ PASS: Test 5
++ PASS: Test 6
 ```
 
 ```js
@@ -123,11 +119,12 @@ const areNotSameLength = (str1, str2) => {
   if (typeof str2 !== 'string') { throw new TypeError('str2'); }
 
   let result;
-  if (str1.Length = str2.Length) {
-    result = result + true;
+  if (str1.length !== str2.length) {
+    result = true;
   } else {
-    result = result + false;
+    result = false;
   }
+
 
   if (typeof result !== 'boolean') { throw new TypeError('result'); }
   return result;
@@ -168,17 +165,17 @@ console.assert(_6_actual === _6_expect, 'Test 6');
 
 ## /3.js 
 
-> fail 
+> pass 
 >
 > [review source](../../../exercises/12-functions-301/2-fix-the-bugs/3.js)
 
 ```txt
-- FAIL: Test 1
-- FAIL: Test 2
-- FAIL: Test 3
-- FAIL: Test 4
-- FAIL: Test 5
-- FAIL: Test 6
++ PASS: Test 1
++ PASS: Test 2
++ PASS: Test 3
++ PASS: Test 4
++ PASS: Test 5
++ PASS: Test 6
 ```
 
 ```js
@@ -200,12 +197,12 @@ const longestOrBoth = (str1, str2) => {
   if (typeof str2 !== 'string') { throw new TypeError('str2'); }
 
   let result = '';
-  if (str1 >= str2) {
-    result === str1;
-  } if (str1 <= str2) {
-    result === str2;
+  if (str1.length > str2.length) {
+    result = str1;
+  }else if (str1.length < str2.length) {
+    result = str2;
   } else {
-    result === `${str1}${str2}`;
+    result = `${str1}${str2}`;
   }
 
   if (typeof result !== 'string') { throw new TypeError('result'); }

@@ -1,6 +1,6 @@
 # Debuggercises 
 
-> 6/27/2020, 9:28:44 AM 
+> 6/27/2020, 12:08:28 PM 
 
 ## /exercises 
 
@@ -84,7 +84,7 @@
   - [/exercises](./06-explicit-coercion/exercises/README.md)
     - [/1-write-expected.js](./06-explicit-coercion/exercises/README.md#1-write-expectedjs) - _pass_ 
     - [/2-write-arguments.js](./06-explicit-coercion/exercises/README.md#2-write-argumentsjs) - _pass_ 
-    - [/3-write-function.js](./06-explicit-coercion/exercises/README.md#3-write-functionjs) - _fail_ 
+    - [/3-write-function.js](./06-explicit-coercion/exercises/README.md#3-write-functionjs) - _pass_ 
 - [/07-logical-operators](./07-logical-operators/README.md)
   - [/examples](./07-logical-operators/examples/README.md)
     - [/0-truthiness.js](./07-logical-operators/examples/README.md#0-truthinessjs)  
@@ -99,8 +99,8 @@
     - [/or.js](./07-logical-operators/exercises/README.md#orjs) - _pass_ 
 - [/08-functions-201](./08-functions-201/README.md)
   - [/0-example.js](./08-functions-201/README.md#0-examplejs) - _pass_ 
-  - [/1-exercise.js](./08-functions-201/README.md#1-exercisejs) - _incomplete_ 
-  - [/2-exercise.js](./08-functions-201/README.md#2-exercisejs) - _incomplete_ 
+  - [/1-exercise.js](./08-functions-201/README.md#1-exercisejs) - _pass_ 
+  - [/2-exercise.js](./08-functions-201/README.md#2-exercisejs) - _pass_ 
 - [/09-block-scope](./09-block-scope/README.md)
   - [/1-missing-values](./09-block-scope/1-missing-values/README.md)
     - [/1.js](./09-block-scope/1-missing-values/README.md#1js) - _pass_ 
@@ -108,13 +108,13 @@
   - [/2-missing-variables](./09-block-scope/2-missing-variables/README.md)
     - [/1.js](./09-block-scope/2-missing-variables/README.md#1js) - _pass_ 
     - [/2.js](./09-block-scope/2-missing-variables/README.md#2js) - _pass_ 
-    - [/3.js](./09-block-scope/2-missing-variables/README.md#3js) - _error_ 
+    - [/3.js](./09-block-scope/2-missing-variables/README.md#3js) - _pass_ 
   - [/3-assign-values](./09-block-scope/3-assign-values/README.md)
     - [/1.js](./09-block-scope/3-assign-values/README.md#1js) - _pass_ 
     - [/2.js](./09-block-scope/3-assign-values/README.md#2js) - _pass_ 
     - [/3.js](./09-block-scope/3-assign-values/README.md#3js) - _pass_ 
   - [/4-declare-and-assign](./09-block-scope/4-declare-and-assign/README.md)
-    - [/1.js](./09-block-scope/4-declare-and-assign/README.md#1js) - _error_ 
+    - [/1.js](./09-block-scope/4-declare-and-assign/README.md#1js) - _pass_ 
     - [/2.js](./09-block-scope/4-declare-and-assign/README.md#2js) - _pass_ 
     - [/3.js](./09-block-scope/4-declare-and-assign/README.md#3js) - _pass_ 
 - [/10-conditional-statements](./10-conditional-statements/README.md)
@@ -157,11 +157,11 @@
     - [/1-write-tests.js](./12-functions-301/1-fill-in-the-blanks/README.md#1-write-testsjs) - _pass_ 
     - [/2-write-tests.js](./12-functions-301/1-fill-in-the-blanks/README.md#2-write-testsjs) - _pass_ 
     - [/3-pass-tests.js](./12-functions-301/1-fill-in-the-blanks/README.md#3-pass-testsjs) - _pass_ 
-    - [/4-pass-tests.js](./12-functions-301/1-fill-in-the-blanks/README.md#4-pass-testsjs) - _error_ 
+    - [/4-pass-tests.js](./12-functions-301/1-fill-in-the-blanks/README.md#4-pass-testsjs) - _pass_ 
   - [/2-fix-the-bugs](./12-functions-301/2-fix-the-bugs/README.md)
-    - [/1.js](./12-functions-301/2-fix-the-bugs/README.md#1js) - _fail_ 
-    - [/2.js](./12-functions-301/2-fix-the-bugs/README.md#2js) - _error_ 
-    - [/3.js](./12-functions-301/2-fix-the-bugs/README.md#3js) - _fail_ 
+    - [/1.js](./12-functions-301/2-fix-the-bugs/README.md#1js) - _pass_ 
+    - [/2.js](./12-functions-301/2-fix-the-bugs/README.md#2js) - _pass_ 
+    - [/3.js](./12-functions-301/2-fix-the-bugs/README.md#3js) - _pass_ 
 - [/13-roles-of-variables](./13-roles-of-variables/README.md)
   - [/readme.js](./13-roles-of-variables/README.md#readmejs)  
   - [/back-tracing.js](./13-roles-of-variables/README.md#back-tracingjs)  
@@ -207,10 +207,10 @@
     - [/complex.js](./18-functions-401/0-examples/README.md#complexjs) - _pass_ 
     - [/ternary.js](./18-functions-401/0-examples/README.md#ternaryjs) - _pass_ 
   - [/1-refactors](./18-functions-401/1-refactors/README.md)
-    - [/1-implicit-to-explicit.js](./18-functions-401/1-refactors/README.md#1-implicit-to-explicitjs) - _error_ 
+    - [/1-implicit-to-explicit.js](./18-functions-401/1-refactors/README.md#1-implicit-to-explicitjs) - _pass_ 
     - [/2-implicit-to-explicit.js](./18-functions-401/1-refactors/README.md#2-implicit-to-explicitjs) - _pass_ 
-    - [/3-explicit-to-implicit.js](./18-functions-401/1-refactors/README.md#3-explicit-to-implicitjs) - _error_ 
-    - [/4-explicit-to-implicit.js](./18-functions-401/1-refactors/README.md#4-explicit-to-implicitjs) - _error_ 
+    - [/3-explicit-to-implicit.js](./18-functions-401/1-refactors/README.md#3-explicit-to-implicitjs) - _pass_ 
+    - [/4-explicit-to-implicit.js](./18-functions-401/1-refactors/README.md#4-explicit-to-implicitjs) - _pass_ 
 - [/19-implicit-coercion](./19-implicit-coercion/README.md)
   - [/0-examples](./19-implicit-coercion/0-examples/README.md)
     - [/0-complicated-but-learnable.js](./19-implicit-coercion/0-examples/README.md#0-complicated-but-learnablejs)  

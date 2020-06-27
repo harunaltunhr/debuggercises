@@ -1,13 +1,13 @@
 # Debuggercises 
 
-> 6/27/2020, 9:28:44 AM 
+> 6/27/2020, 12:08:28 PM 
 
 ## [exercises](../../README.md)/[12-functions-301](../README.md)/1-fill-in-the-blanks 
 
 - [/1-write-tests.js](#1-write-testsjs) - _pass_ 
 - [/2-write-tests.js](#2-write-testsjs) - _pass_ 
 - [/3-pass-tests.js](#3-pass-testsjs) - _pass_ 
-- [/4-pass-tests.js](#4-pass-testsjs) - _error_ 
+- [/4-pass-tests.js](#4-pass-testsjs) - _pass_ 
 ---
 
 ## /1-write-tests.js 
@@ -258,22 +258,20 @@ console.assert(_9_actual === _9_expect, 'Test 9');
 
 ## /4-pass-tests.js 
 
-> error 
+> pass 
 >
 > [review source](../../../exercises/12-functions-301/1-fill-in-the-blanks/4-pass-tests.js)
 
 ```txt
-UNCAUGHT: ReferenceError: Bo is not defined
-    at mystery (  ...  /exercises/12-functions-301/1-fill-in-the-blanks/4-pass-tests.js:14:44)
-    at Object.<anonymous> (  ...  /exercises/12-functions-301/1-fill-in-the-blanks/4-pass-tests.js:21:19)
-    at Module._compile (internal/modules/cjs/loader.js:1200:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
-    at Module.load (internal/modules/cjs/loader.js:1049:32)
-    at Function.Module._load (internal/modules/cjs/loader.js:937:14)
-    at Module.require (internal/modules/cjs/loader.js:1089:19)
-    at require (internal/modules/cjs/helpers.js:73:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:28:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:119:1) 
++ PASS: Test 1
++ PASS: Test 2
++ PASS: Test 3
++ PASS: Test 4
++ PASS: Test 5
++ PASS: Test 6
++ PASS: Test 7
++ PASS: Test 8
++ PASS: Test 9
 ```
 
 ```js
@@ -290,7 +288,7 @@ UNCAUGHT: ReferenceError: Bo is not defined
 const mystery = (a) => {
   // no need to check a , they can be any type
 
-  const result = (String(a)!==Number(a)) ? Bo: false;
+  const result = (Number(a) == a) ? false : (a) ? true : (a===undefined) ? true : false ;
   if (typeof result !== 'boolean') { throw new TypeError('result'); }
   return result;
 };
