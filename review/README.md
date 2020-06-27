@@ -1,6 +1,6 @@
 # Debuggercises 
 
-> 6/27/2020, 6:57:05 PM 
+> 6/27/2020, 7:57:32 PM 
 
 ## /exercises 
 
@@ -218,7 +218,7 @@
     - [/2-loose-equality.js](./19-implicit-coercion/0-examples/README.md#2-loose-equalityjs) - _pass_ 
   - [/1-write-tests-arithmetic](./19-implicit-coercion/1-write-tests-arithmetic/README.md)
     - [/division.js](./19-implicit-coercion/1-write-tests-arithmetic/README.md#divisionjs) - _pass_ 
-    - [/multiplication.js](./19-implicit-coercion/1-write-tests-arithmetic/README.md#multiplicationjs) - _fail_ 
+    - [/multiplication.js](./19-implicit-coercion/1-write-tests-arithmetic/README.md#multiplicationjs) - _pass_ 
     - [/remainder.js](./19-implicit-coercion/1-write-tests-arithmetic/README.md#remainderjs) - _pass_ 
     - [/subtraction.js](./19-implicit-coercion/1-write-tests-arithmetic/README.md#subtractionjs) - _pass_ 
     - [/unary-minus.js](./19-implicit-coercion/1-write-tests-arithmetic/README.md#unary-minusjs) - _pass_ 

@@ -1,11 +1,11 @@
 # Debuggercises 
 
-> 6/27/2020, 6:57:05 PM 
+> 6/27/2020, 7:57:32 PM 
 
 ## [exercises](../../README.md)/[19-implicit-coercion](../README.md)/1-write-tests-arithmetic 
 
 - [/division.js](#divisionjs) - _pass_ 
-- [/multiplication.js](#multiplicationjs) - _fail_ 
+- [/multiplication.js](#multiplicationjs) - _pass_ 
 - [/remainder.js](#remainderjs) - _pass_ 
 - [/subtraction.js](#subtractionjs) - _pass_ 
 - [/unary-minus.js](#unary-minusjs) - _pass_ 
@@ -103,7 +103,7 @@ console.assert(Object.is(_9_expect, _9_native), 'Test 9');
 
 ## /multiplication.js 
 
-> fail 
+> pass 
 >
 > [review source](../../../exercises/19-implicit-coercion/1-write-tests-arithmetic/multiplication.js)
 
@@ -114,7 +114,7 @@ console.assert(Object.is(_9_expect, _9_native), 'Test 9');
 + PASS: Test 4
 + PASS: Test 5
 + PASS: Test 6
-- FAIL: Test 7
++ PASS: Test 7
 + PASS: Test 8
 + PASS: Test 9
 ```
@@ -165,7 +165,7 @@ console.assert(Object.is(_6_expect, _6_native), 'Test 6');
 
 const _7_a = 'aa';
 const _7_b = NaN;
-const _7_expect = 18;
+const _7_expect = NaN;
 const _7_native = multiply(_7_a, _7_b);
 console.assert(Object.is(_7_expect, _7_native), 'Test 7');
 

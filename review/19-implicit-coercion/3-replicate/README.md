@@ -1,6 +1,6 @@
 # Debuggercises 
 
-> 6/27/2020, 6:57:05 PM 
+> 6/27/2020, 7:57:32 PM 
 
 ## [exercises](../../README.md)/[19-implicit-coercion](../README.md)/3-replicate 
 
@@ -159,12 +159,12 @@ console.assert(_15_copy === _15_native, 'Test 15');
 
 ```txt
 + PASS: Test 1
-+ PASS: Test 2
-+ PASS: Test 3
-+ PASS: Test 4
-+ PASS: Test 5
+- FAIL: Test 2
+- FAIL: Test 3
+- FAIL: Test 4
+- FAIL: Test 5
 - FAIL: Test 6
-+ PASS: Test 7
+- FAIL: Test 7
 - FAIL: Test 8
 - FAIL: Test 9
 ```
@@ -180,12 +180,10 @@ console.assert(_15_copy === _15_native, 'Test 15');
  */
 function remainder(a, b) {
 let result;
-    if(Number (a) % Number (b)){
-    result = Number(a);
-    }else if (Number(b)== 0){
-    result = NaN;
+    if(Number (a)/Number (b)){
+    result = 0;
     }else{
-        result = 0;
+    result = 1;
     }
     return result;
 };
@@ -257,11 +255,11 @@ console.assert(Object.is(_9_copy, _9_native), 'Test 9');
 > [review source](../../../exercises/19-implicit-coercion/3-replicate/unary-minus.js)
 
 ```txt
-- FAIL: Test 1
-- FAIL: Test 2
-- FAIL: Test 3
-- FAIL: Test 4
-- FAIL: Test 5
++ PASS: Test 1
++ PASS: Test 2
++ PASS: Test 3
++ PASS: Test 4
++ PASS: Test 5
 - FAIL: Test 6
 - FAIL: Test 7
 - FAIL: Test 8
@@ -276,8 +274,16 @@ console.assert(Object.is(_9_copy, _9_native), 'Test 9');
  * @param {any} a
  * @returns {number}
  */
+let result;
 function unaryMinus(a) {
-
+    if(typeof(a)==='number'||'string'){
+    result = -1 ;
+}   else if(typeof(a)==='boolean'){
+    result = -Number(a);
+}else{
+    result = NaN;
+}
+    return result;
 };
 
 const _1_a = 1;
