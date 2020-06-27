@@ -1,36 +1,36 @@
 # Debuggercises 
 
-> 6/27/2020, 12:08:28 PM 
+> 6/27/2020, 6:57:05 PM 
 
 ## [exercises](../../README.md)/[19-implicit-coercion](../README.md)/3-replicate 
 
-- [/loose-inequality.js](#loose-inequalityjs) - _fail_ 
+- [/loose-inequality.js](#loose-inequalityjs) - _pass_ 
 - [/remainder.js](#remainderjs) - _fail_ 
 - [/unary-minus.js](#unary-minusjs) - _fail_ 
 ---
 
 ## /loose-inequality.js 
 
-> fail 
+> pass 
 >
 > [review source](../../../exercises/19-implicit-coercion/3-replicate/loose-inequality.js)
 
 ```txt
-- FAIL: Test 1
-- FAIL: Test 2
-- FAIL: Test 3
-- FAIL: Test 4
-- FAIL: Test 5
-- FAIL: Test 6
-- FAIL: Test 7
-- FAIL: Test 8
-- FAIL: Test 9
-- FAIL: Test 10
-- FAIL: Test 11
-- FAIL: Test 12
-- FAIL: Test 13
-- FAIL: Test 14
-- FAIL: Test 15
++ PASS: Test 1
++ PASS: Test 2
++ PASS: Test 3
++ PASS: Test 4
++ PASS: Test 5
++ PASS: Test 6
++ PASS: Test 7
++ PASS: Test 8
++ PASS: Test 9
++ PASS: Test 10
++ PASS: Test 11
++ PASS: Test 12
++ PASS: Test 13
++ PASS: Test 14
++ PASS: Test 15
 ```
 
 ```js
@@ -44,7 +44,15 @@
  * @returns {boolean}
  */
 function looseInequality(a, b) {
+let result;
+if(a==b){
+    result = false;
+}
+else if(a!==b){
+    result = true;
 
+}
+return result;
 };
 
 const _01_a = null;
@@ -150,13 +158,13 @@ console.assert(_15_copy === _15_native, 'Test 15');
 > [review source](../../../exercises/19-implicit-coercion/3-replicate/remainder.js)
 
 ```txt
-- FAIL: Test 1
-- FAIL: Test 2
-- FAIL: Test 3
-- FAIL: Test 4
-- FAIL: Test 5
++ PASS: Test 1
++ PASS: Test 2
++ PASS: Test 3
++ PASS: Test 4
++ PASS: Test 5
 - FAIL: Test 6
-- FAIL: Test 7
++ PASS: Test 7
 - FAIL: Test 8
 - FAIL: Test 9
 ```
@@ -171,7 +179,15 @@ console.assert(_15_copy === _15_native, 'Test 15');
  * @returns {number}
  */
 function remainder(a, b) {
-
+let result;
+    if(Number (a) % Number (b)){
+    result = Number(a);
+    }else if (Number(b)== 0){
+    result = NaN;
+    }else{
+        result = 0;
+    }
+    return result;
 };
 
 const _1_a = '8';
