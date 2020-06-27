@@ -1,6 +1,6 @@
 # Debuggercises 
 
-> 6/27/2020, 9:28:44 AM 
+> 6/27/2020, 12:08:28 PM 
 
 ## [exercises](../../README.md)/[17-refactoring-loops](../README.md)/exercises 
 
@@ -171,7 +171,7 @@ console.assert(_9_actual === _9_expect, 'Test  9');
 ```txt
 + PASS: Test  1
 UNCAUGHT: Error: Loop exceeded 20 iterations
-    at mystery (  ...  /exercises/17-refactoring-loops/exercises/3-while-to-for.js:18:54)
+    at mystery (  ...  /exercises/17-refactoring-loops/exercises/3-while-to-for.js:18:55)
     at Object.<anonymous> (  ...  /exercises/17-refactoring-loops/exercises/3-while-to-for.js:33:19)
     at Module._compile (internal/modules/cjs/loader.js:1200:30)
     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
@@ -200,8 +200,8 @@ const mystery = (x) => {
   if (typeof x !== 'number') { throw new TypeError('x'); }
 
   let result = 0;
-  let i = 0;
-  while (i !== x) {
+  let i;
+  for (i=0;i < x;) {
     result += i;
     i += 2;
   }

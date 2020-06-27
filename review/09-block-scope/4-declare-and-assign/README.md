@@ -1,45 +1,37 @@
 # Debuggercises 
 
-> 6/27/2020, 9:28:44 AM 
+> 6/27/2020, 12:08:28 PM 
 
 ## [exercises](../../README.md)/[09-block-scope](../README.md)/4-declare-and-assign 
 
-- [/1.js](#1js) - _error_ 
+- [/1.js](#1js) - _pass_ 
 - [/2.js](#2js) - _pass_ 
 - [/3.js](#3js) - _pass_ 
 ---
 
 ## /1.js 
 
-> error 
+> pass 
 >
 > [review source](../../../exercises/09-block-scope/4-declare-and-assign/1.js)
 
 ```txt
-UNCAUGHT: ReferenceError: a is not defined
-    at Object.<anonymous> (  ...  /exercises/09-block-scope/4-declare-and-assign/1.js:3:3)
-    at Module._compile (internal/modules/cjs/loader.js:1200:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
-    at Module.load (internal/modules/cjs/loader.js:1049:32)
-    at Function.Module._load (internal/modules/cjs/loader.js:937:14)
-    at Module.require (internal/modules/cjs/loader.js:1089:19)
-    at require (internal/modules/cjs/helpers.js:73:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:28:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:119:1)
-    at Module._compile (internal/modules/cjs/loader.js:1200:30) 
++ PASS: Test 1
++ PASS: Test 2
++ PASS: Test 3
 ```
 
 ```js
+
 'use strict';
 
- a= false;
+let a = false;
 console.assert(a === false, 'Test 1');
 {
-let a =null;
+ const a = null;
   console.assert(a === null, 'Test 2');
 }
 console.assert(a === false, 'Test 3');
-
 ```
 
 [TOP](#debuggercises)
