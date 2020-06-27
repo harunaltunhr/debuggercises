@@ -7,7 +7,15 @@
  * @returns {number}
  */
 function remainder(a, b) {
-
+let result;
+    if(Number (a) % Number (b)){
+    result = Number(a);
+    }else if (Number(b)== 0){
+    result = NaN;
+    }else{
+        result = 0;
+    }
+    return result;
 };
 
 const _1_a = '8';
