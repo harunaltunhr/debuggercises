@@ -1,16 +1,16 @@
 # Debuggercises 
 
-> 6/26/2020, 8:51:50 PM 
+> 6/26/2020, 9:21:50 PM 
 
 ## [exercises](../../README.md)/[04-value-swaps](../README.md)/exercises 
 
 - [/1-double-swap.js](#1-double-swapjs) - _pass_ 
-- [/2-triple-swap.js](#2-triple-swapjs) - _fail_ 
-- [/3-triple-swap.js](#3-triple-swapjs) - _incomplete_ 
-- [/4-quadruple-swap.js](#4-quadruple-swapjs) - _incomplete_ 
-- [/5-quadruple-swap.js](#5-quadruple-swapjs) - _incomplete_ 
-- [/6-let-and-const.js](#6-let-and-constjs) - _incomplete_ 
-- [/7-let-and-const.js](#7-let-and-constjs) - _incomplete_ 
+- [/2-triple-swap.js](#2-triple-swapjs) - _pass_ 
+- [/3-triple-swap.js](#3-triple-swapjs) - _pass_ 
+- [/4-quadruple-swap.js](#4-quadruple-swapjs) - _pass_ 
+- [/5-quadruple-swap.js](#5-quadruple-swapjs) - _pass_ 
+- [/6-let-and-const.js](#6-let-and-constjs) - _pass_ 
+- [/7-let-and-const.js](#7-let-and-constjs) - _pass_ 
 ---
 
 ## /1-double-swap.js 
@@ -57,14 +57,14 @@ console.assert(isTrue3, 'Test 3');
 
 ## /2-triple-swap.js 
 
-> fail 
+> pass 
 >
 > [review source](../../../exercises/04-value-swaps/exercises/2-triple-swap.js)
 
 ```txt
-- FAIL: Test 1
-- FAIL: Test 2
-- FAIL: Test 3
++ PASS: Test 1
++ PASS: Test 2
++ PASS: Test 3
 + PASS: Test 4
 ```
 
@@ -77,7 +77,11 @@ let c = 'y';
 let temp = null;
 
 // write some code, be sure to use temp!
-
+temp = a ;
+a = b ;
+b = c ;
+c = temp ;
+temp = null ;
 
 // fill in the _ to pass the assertions
 
@@ -102,25 +106,15 @@ console.assert(isTrue4, 'Test 4');
 
 ## /3-triple-swap.js 
 
-> incomplete 
+> pass 
 >
 > [review source](../../../exercises/04-value-swaps/exercises/3-triple-swap.js)
 
 ```txt
-- FAIL: Test 1
-- FAIL: Test 2
-- FAIL: Test 3
-UNCAUGHT: ReferenceError: _ is not defined
-    at Object.<anonymous> (  ...  /exercises/04-value-swaps/exercises/3-triple-swap.js:22:26)
-    at Module._compile (internal/modules/cjs/loader.js:1200:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
-    at Module.load (internal/modules/cjs/loader.js:1049:32)
-    at Function.Module._load (internal/modules/cjs/loader.js:937:14)
-    at Module.require (internal/modules/cjs/loader.js:1089:19)
-    at require (internal/modules/cjs/helpers.js:73:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:28:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:119:1)
-    at Module._compile (internal/modules/cjs/loader.js:1200:30) 
++ PASS: Test 1
++ PASS: Test 2
++ PASS: Test 3
++ PASS: Test 4
 ```
 
 ```js
@@ -132,6 +126,12 @@ let c = 'x';
 let temp = null;
 
 // write some code, be sure to use temp!
+temp = a;
+a = c ;
+c = b ;
+b = temp ;
+temp = null ;
+
 
 
 // fill in the _ to pass the assertions
@@ -145,7 +145,7 @@ console.assert(isTrue2, 'Test 2');
 const isTrue3 = c === 'z';
 console.assert(isTrue3, 'Test 3');
 
-const isTrue4 = temp === _;
+const isTrue4 = temp === null;
 console.assert(isTrue4, 'Test 4');
 
 
@@ -157,26 +157,16 @@ console.assert(isTrue4, 'Test 4');
 
 ## /4-quadruple-swap.js 
 
-> incomplete 
+> pass 
 >
 > [review source](../../../exercises/04-value-swaps/exercises/4-quadruple-swap.js)
 
 ```txt
-- FAIL: Test 1
-- FAIL: Test 2
-- FAIL: Test 3
-- FAIL: Test 4
-UNCAUGHT: ReferenceError: _ is not defined
-    at Object.<anonymous> (  ...  /exercises/04-value-swaps/exercises/4-quadruple-swap.js:27:26)
-    at Module._compile (internal/modules/cjs/loader.js:1200:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
-    at Module.load (internal/modules/cjs/loader.js:1049:32)
-    at Function.Module._load (internal/modules/cjs/loader.js:937:14)
-    at Module.require (internal/modules/cjs/loader.js:1089:19)
-    at require (internal/modules/cjs/helpers.js:73:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:28:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:119:1)
-    at Module._compile (internal/modules/cjs/loader.js:1200:30) 
++ PASS: Test 1
++ PASS: Test 2
++ PASS: Test 3
++ PASS: Test 4
++ PASS: Test 5
 ```
 
 ```js
@@ -189,6 +179,12 @@ let d = 'x';
 let temp = null;
 
 // write some code, be sure to use temp!
+temp = a;
+a = c;
+c = temp;
+temp = b ;
+b = d ;
+d = temp;
 
 
 
@@ -206,7 +202,7 @@ console.assert(isTrue3, 'Test 3');
 const isTrue4 = d === 'z';
 console.assert(isTrue4, 'Test 4');
 
-const isTrue5 = temp === _;
+const isTrue5 = temp === 'z';
 console.assert(isTrue5, 'Test 5');
 
 
@@ -218,26 +214,16 @@ console.assert(isTrue5, 'Test 5');
 
 ## /5-quadruple-swap.js 
 
-> incomplete 
+> pass 
 >
 > [review source](../../../exercises/04-value-swaps/exercises/5-quadruple-swap.js)
 
 ```txt
-- FAIL: Test 1
-- FAIL: Test 2
-- FAIL: Test 3
-- FAIL: Test 4
-UNCAUGHT: ReferenceError: _ is not defined
-    at Object.<anonymous> (  ...  /exercises/04-value-swaps/exercises/5-quadruple-swap.js:27:26)
-    at Module._compile (internal/modules/cjs/loader.js:1200:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
-    at Module.load (internal/modules/cjs/loader.js:1049:32)
-    at Function.Module._load (internal/modules/cjs/loader.js:937:14)
-    at Module.require (internal/modules/cjs/loader.js:1089:19)
-    at require (internal/modules/cjs/helpers.js:73:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:28:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:119:1)
-    at Module._compile (internal/modules/cjs/loader.js:1200:30) 
++ PASS: Test 1
++ PASS: Test 2
++ PASS: Test 3
++ PASS: Test 4
++ PASS: Test 5
 ```
 
 ```js
@@ -250,7 +236,11 @@ let d = 'x';
 let temp = null;
 
 // write some code, be sure to use temp!
-
+temp = a ;
+a = b ;
+b = d ;
+d = c ;
+c = temp ;
 
 
 // fill in the final _ to pass the assertions
@@ -267,7 +257,7 @@ console.assert(isTrue3, 'Test 3');
 const isTrue4 = d === 'z';
 console.assert(isTrue4, 'Test 4');
 
-const isTrue5 = temp === _;
+const isTrue5 = temp === 'y';
 console.assert(isTrue5, 'Test 5');
 
 
@@ -279,24 +269,15 @@ console.assert(isTrue5, 'Test 5');
 
 ## /6-let-and-const.js 
 
-> incomplete 
+> pass 
 >
 > [review source](../../../exercises/04-value-swaps/exercises/6-let-and-const.js)
 
 ```txt
-- FAIL: Test 1
-- FAIL: Test 2
-UNCAUGHT: ReferenceError: _ is not defined
-    at Object.<anonymous> (  ...  /exercises/04-value-swaps/exercises/6-let-and-const.js:25:23)
-    at Module._compile (internal/modules/cjs/loader.js:1200:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
-    at Module.load (internal/modules/cjs/loader.js:1049:32)
-    at Function.Module._load (internal/modules/cjs/loader.js:937:14)
-    at Module.require (internal/modules/cjs/loader.js:1089:19)
-    at require (internal/modules/cjs/helpers.js:73:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:28:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:119:1)
-    at Module._compile (internal/modules/cjs/loader.js:1200:30) 
++ PASS: Test 1
++ PASS: Test 2
++ PASS: Test 3
++ PASS: Test 4
 ```
 
 ```js
@@ -314,6 +295,8 @@ temp = a;
 const c = temp;
 
 // write some code, be sure to use temp!
+a = b;
+b = c;
 
 
 // replace the _ with a value to pass the assertions
@@ -324,10 +307,10 @@ console.assert(isTrue1, "Test 1");
 const isTrue2 = b === 'y';
 console.assert(isTrue2, "Test 2");
 
-const isTrue3 = c === _;
+const isTrue3 = c === 'y';
 console.assert(isTrue3, "Test 3");
 
-const isTrue4 = temp === _;
+const isTrue4 = temp === 'y';
 console.assert(isTrue4, "Test 4");
 
 
@@ -339,25 +322,16 @@ console.assert(isTrue4, "Test 4");
 
 ## /7-let-and-const.js 
 
-> incomplete 
+> pass 
 >
 > [review source](../../../exercises/04-value-swaps/exercises/7-let-and-const.js)
 
 ```txt
-- FAIL: Test 1
-- FAIL: Test 2
-- FAIL: Test 3
-UNCAUGHT: ReferenceError: _ is not defined
-    at Object.<anonymous> (  ...  /exercises/04-value-swaps/exercises/7-let-and-const.js:32:23)
-    at Module._compile (internal/modules/cjs/loader.js:1200:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
-    at Module.load (internal/modules/cjs/loader.js:1049:32)
-    at Function.Module._load (internal/modules/cjs/loader.js:937:14)
-    at Module.require (internal/modules/cjs/loader.js:1089:19)
-    at require (internal/modules/cjs/helpers.js:73:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:28:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:119:1)
-    at Module._compile (internal/modules/cjs/loader.js:1200:30) 
++ PASS: Test 1
++ PASS: Test 2
++ PASS: Test 3
++ PASS: Test 4
++ PASS: Test 5
 ```
 
 ```js
@@ -377,7 +351,9 @@ a = b;
 const d = a;
 
 // write some code, be sure to use temp!
-
+a = c ;
+b = temp ;
+c = d ;
 
 
 
@@ -392,10 +368,10 @@ console.assert(isTrue2, 'Test 2');
 const isTrue3 = c === 'z';
 console.assert(isTrue3, 'Test 3');
 
-const isTrue4 = d === _;
+const isTrue4 = d === 'z';
 console.assert(isTrue4, 'Test 4');
 
-const isTrue5 = temp === _;
+const isTrue5 = temp === 'y';
 console.assert(isTrue5, 'Test 5');
 
 
