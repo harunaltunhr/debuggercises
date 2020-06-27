@@ -7,14 +7,25 @@
  * @param {any} b
  * @returns {any}
  */
-const mystery = (a,b) => {if(Boolean(a) !== Boolean(b)){
-  result = a && b;
-} else if(b){
-  result = (a && b);
-} else{
-  result = (!b && !a);
-}
-return result
+const mystery = (a,b) => {
+  let result;
+  if(typeof a === typeof b){
+    if(a&&b){
+      result = 1;
+    } else if(a === b){
+      result = true;
+    }else{
+      result = 0;
+    }
+  }
+  else if(typeof a === 'object'){
+    if(typeof b==='string'){
+      result = a ;
+    }else{
+      result = b ;
+    }
+  }
+return result ;
 }
 
 const _1_arg1 = 1;

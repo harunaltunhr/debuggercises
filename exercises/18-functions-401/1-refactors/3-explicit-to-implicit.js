@@ -9,6 +9,7 @@
  */
 
 const mystery = (a, b) => {
+  let result;
   if(Number(typeof a === typeof b)){
     if((a > b)){
       result = Number(a);
@@ -16,8 +17,10 @@ const mystery = (a, b) => {
       result = Number(b);
     }
   }
-  else{
-    result = Number(b);
+  else if((a&&b) || (typeof a =='object')){
+    result = NaN;
+  }else{
+    result = 0 ;
   }
   return result;
 }

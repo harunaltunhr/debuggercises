@@ -11,7 +11,7 @@
 const mystery = (a) => {
   // no need to check a , they can be any type
 
-  const result = (String(a)!==Number(a)) ? Bo: false;
+  const result = (Number(a) == a) ? false : (a) ? true : (a===undefined) ? true : false ;
   if (typeof result !== 'boolean') { throw new TypeError('result'); }
   return result;
 };

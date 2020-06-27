@@ -6,7 +6,7 @@
    ===
 */
 const mystery = (x, y) => {
-
+return Number(x)=== Number(y);
 };
 
 // all of the test cases are correct

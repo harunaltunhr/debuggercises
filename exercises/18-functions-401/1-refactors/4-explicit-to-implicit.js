@@ -6,12 +6,12 @@
  * @param {any} a
  * @param {any} b
  * @returns {string}
- */
-const mystery = (a, b) => {if(String(a)){
-  result = String(a);
+ */let result;
+const mystery = (a, b) => {if(((String(a)===String(b))&&(Boolean(a)===Boolean(b)))||a===''){
+  result = String(b);
 }
   else{
-   result = String(b);
+   result = String(a);
   }
   return result;
 }

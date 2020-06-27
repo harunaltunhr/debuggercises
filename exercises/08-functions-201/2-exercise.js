@@ -9,11 +9,11 @@
 */
 
 const withAnd = (x, y) => {
-  return _;
+  return Number (!(x&&y));
 };
 
 const withOr = (x, y) => {
-  return _;
+  return Number (!x || !y);
 };
 
 
