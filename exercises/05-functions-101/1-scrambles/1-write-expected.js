@@ -26,5 +26,5 @@ console.assert(_5_actual === _5_expect, 'Test 5');
 
 const _6_expect = 'bca';
 const _6_actual = scramble('c', 'a', 'b');
-console.assert(_6_actual === __6expect, 'Test 6');
+console.assert(_6_actual === _6_expect, 'Test 6');
 
